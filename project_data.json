@@ -1,0 +1,61 @@
+{
+  "data": {
+    "organization": {
+      "projectV2": {
+        "id": "PVT_kwDOCaK0PM4A7kSs",
+        "fields": {
+          "nodes": [
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04Z4", "name": "Title" },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04Z8", "name": "Assignees" },
+            {
+              "id": "PVTSSF_lADOCaK0PM4A7kSszgv04aA",
+              "name": "Status",
+              "options": [
+                { "id": "f75ad846", "name": "Todo" },
+                { "id": "47fc9ee4", "name": "In Progress" },
+                { "id": "98236657", "name": "Done" }
+              ]
+            },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04aE", "name": "Labels" },
+            {
+              "id": "PVTF_lADOCaK0PM4A7kSszgv04aI",
+              "name": "Linked pull requests"
+            },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04aM", "name": "Milestone" },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04aQ", "name": "Repository" },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04aY", "name": "Reviewers" },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04ac", "name": "Parent issue" },
+            {
+              "id": "PVTF_lADOCaK0PM4A7kSszgv04ag",
+              "name": "Sub-issues progress"
+            },
+            {
+              "id": "PVTSSF_lADOCaK0PM4A7kSszgv04eI",
+              "name": "Priority",
+              "options": [
+                { "id": "2b4aefd6", "name": "P0" },
+                { "id": "82da4950", "name": "P1" },
+                { "id": "c63c9b3b", "name": "P2" }
+              ]
+            },
+            {
+              "id": "PVTSSF_lADOCaK0PM4A7kSszgv04eM",
+              "name": "Size",
+              "options": [
+                { "id": "03346812", "name": "XS" },
+                { "id": "743988bb", "name": "S" },
+                { "id": "53ba92a8", "name": "M" },
+                { "id": "dfff114d", "name": "L" },
+                { "id": "2adc8c46", "name": "XL" }
+              ]
+            },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04eQ", "name": "Estimate" },
+            {},
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04eY", "name": "Start date" },
+            { "id": "PVTF_lADOCaK0PM4A7kSszgv04ec", "name": "End date" }
+          ]
+        }
+      }
+    }
+  }
+}
