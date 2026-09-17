@@ -2,8 +2,13 @@ import {
   addOrgEmployees,
   type BulkImportResult,
 } from '@/data/superuser/org-employees';
+import { buildEmployeeRow } from '@/data/superuser/_employee-row';
+import { recordEmployeeImportRun } from '@/data/superuser/employee-import-runs';
 import { todayIsoDate } from '@/lib/settings/employee-form';
 import { createClient } from '@/utils/supabase/service_server';
+import logger from '@/utils/pino';
+import { sanitizeForLogging } from '@/utils/log-sanitization';
+import { computeImportDelta, type ExistingEmployeeState } from './delta';
 import {
   describeColumns,
   guessHasHeaderRow,
@@ -45,7 +50,10 @@ export type ImportPreview = {
   unresolvedBusinessGroups: string[];
 };
 
-export type CommitResponse = BulkImportResult;
+export type CommitResponse = BulkImportResult & {
+  /** Delta report run; null when this import seeded an empty directory. */
+  importRunId: number | null;
+};
 
 export type PreviewResponse = {
   file: {
@@ -60,7 +68,8 @@ export type PreviewResponse = {
   preview: ImportPreview | null;
 };
 
-type ExistingIdentifier = { employee_id: string | null; email: string | null };
+const EXISTING_STATE_SELECT =
+  'id, employee_id, email, first_name, last_name, region, country, division, department, cost_center, business_unit, entity, team, start_date, leave_date, status';
 
 function businessGroupNames(rows: ResolvedEmployeeRow[]): string[] {
   return Array.from(
@@ -70,16 +79,16 @@ function businessGroupNames(rows: ResolvedEmployeeRow[]): string[] {
 
 const DB_PAGE_SIZE = 1000;
 
-async function loadExistingIdentifiers(
+async function loadExistingEmployees(
   organizationId: string,
-): Promise<ExistingIdentifier[]> {
+): Promise<ExistingEmployeeState[]> {
   const supabase = createClient();
-  const all: ExistingIdentifier[] = [];
+  const all: ExistingEmployeeState[] = [];
 
   for (let offset = 0; ; offset += DB_PAGE_SIZE) {
     const { data, error } = await supabase
       .from('org_employees')
-      .select('employee_id, email')
+      .select(EXISTING_STATE_SELECT)
       .eq('organization_id', organizationId)
       .is('deleted_at', null)
       .order('id')
@@ -95,7 +104,7 @@ async function loadExistingIdentifiers(
 
 function countExisting(
   rows: ResolvedEmployeeRow[],
-  existing: ExistingIdentifier[],
+  existing: Pick<ExistingEmployeeState, 'employee_id' | 'email'>[],
 ): { newCount: number; updateCount: number } {
   const byEmployeeId = new Set(
     existing.map((e) => e.employee_id).filter((v): v is string => !!v),
@@ -161,7 +170,7 @@ export async function previewImport(
   // while the user is still editing the mapping and only count for the final
   // preview the Import button acts on.
   const counts = includeAllRows
-    ? countExisting(rows, await loadExistingIdentifiers(organizationId))
+    ? countExisting(rows, await loadExistingEmployees(organizationId))
     : { newCount: null, updateCount: null };
 
   response.preview = {
@@ -189,6 +198,7 @@ export async function commitImport(
   organizationId: string,
   file: File,
   mapping: EmployeeImportMapping,
+  importedBy: string | null = null,
 ): Promise<CommitResponse> {
   const sheet = await parseImportFile(file, mapping.sheetName);
   const { rows } = resolveRows(sheet.rows, mapping, { today: todayIsoDate() });
@@ -226,7 +236,39 @@ export async function commitImport(
       ...(row.status ? { status: row.status } : {}),
     }));
 
+  // Snapshot the directory before the write: the delta report compares this
+  // state against the file, and the upsert below destroys it.
+  const existing = await loadExistingEmployees(organizationId);
+
   const result = await addOrgEmployees(payload);
 
-  return result;
+  let importRunId: number | null = null;
+  // An import into an empty directory seeds the baseline; there is nothing to
+  // diff against, so no report run is recorded for it.
+  if (existing.length > 0) {
+    try {
+      const failedRowIndexes = new Set(result.errors.map((e) => e.rowIndex));
+      const incoming = payload
+        .filter((row) => !failedRowIndexes.has(row.sourceRowIndex))
+        .map((row) => buildEmployeeRow(row));
+      const delta = computeImportDelta(existing, incoming);
+      importRunId = await recordEmployeeImportRun({
+        organizationId,
+        fileName: file.name,
+        importedBy,
+        rowCount: payload.length,
+        previousEmployeeCount: existing.length,
+        changes: delta.changes,
+      });
+    } catch (error) {
+      // The employees are already written; a missing report must not turn a
+      // successful import into a failure.
+      logger.error(
+        { error: sanitizeForLogging(error), organizationId },
+        'Failed to record employee import delta report',
+      );
+    }
+  }
+
+  return { ...result, importRunId };
 }

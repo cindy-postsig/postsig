@@ -1,5 +1,6 @@
 import { getUserMetadata } from '@/data/users';
 import { getOrgEmployees } from '@/data/superuser/org-employees';
+import { getLatestEmployeeImportRunId } from '@/data/superuser/employee-import-runs';
 import { getOrgBusinessGroupNodes } from '@/data/superuser/org-units';
 import { Separator } from '@/components/ui/separator';
 import logger from '@/utils/pino';
@@ -29,22 +30,32 @@ export default async function EmployeesPage() {
   let employees: OrgEmployee[] = [];
   let orgGroups: Array<{ id: number; name: string }> = [];
   let importMapping: EmployeeImportMapping | null = null;
+  let latestImportRunId: number | null = null;
 
   try {
-    const [employeesData, groupsData, mappingResult] = await Promise.all([
-      getOrgEmployees(organizationId),
-      getOrgBusinessGroupNodes(),
-      getSavedImportMapping().catch((err) => {
-        logger.warn(
-          { error: sanitizeForLogging(err), organizationId },
-          'Could not load the saved employee import mapping',
-        );
-        return null;
-      }),
-    ]);
+    const [employeesData, groupsData, mappingResult, latestRunId] =
+      await Promise.all([
+        getOrgEmployees(organizationId),
+        getOrgBusinessGroupNodes(),
+        getSavedImportMapping().catch((err) => {
+          logger.warn(
+            { error: sanitizeForLogging(err), organizationId },
+            'Could not load the saved employee import mapping',
+          );
+          return null;
+        }),
+        getLatestEmployeeImportRunId(organizationId).catch((err) => {
+          logger.warn(
+            { error: sanitizeForLogging(err), organizationId },
+            'Could not load the latest employee import run',
+          );
+          return null;
+        }),
+      ]);
     employees = employeesData;
     orgGroups = groupsData;
     importMapping = mappingResult;
+    latestImportRunId = latestRunId;
   } catch (err) {
     logger.error(
       {
@@ -75,6 +86,7 @@ export default async function EmployeesPage() {
         initialEmployees={employees}
         orgGroups={orgGroups}
         initialImportMapping={importMapping}
+        initialImportRunId={latestImportRunId}
       />
     </SettingsPage>
   );

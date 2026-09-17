@@ -9523,6 +9523,71 @@ export type Database = {
           },
         ];
       };
+      org_employee_import_runs: {
+        Row: {
+          changes: Json;
+          created_at: string;
+          file_name: string;
+          id: number;
+          imported_by: string | null;
+          organization_id: string;
+          previous_employee_count: number;
+          previous_run_id: number | null;
+          row_count: number;
+        };
+        Insert: {
+          changes?: Json;
+          created_at?: string;
+          file_name: string;
+          id?: number;
+          imported_by?: string | null;
+          organization_id: string;
+          previous_employee_count: number;
+          previous_run_id?: number | null;
+          row_count: number;
+        };
+        Update: {
+          changes?: Json;
+          created_at?: string;
+          file_name?: string;
+          id?: number;
+          imported_by?: string | null;
+          organization_id?: string;
+          previous_employee_count?: number;
+          previous_run_id?: number | null;
+          row_count?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'org_employee_import_runs_imported_by_fkey';
+            columns: ['imported_by'];
+            isOneToOne: false;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'org_employee_import_runs_organization_id_fkey';
+            columns: ['organization_id'];
+            isOneToOne: false;
+            referencedRelation: 'mcp_distinct_orgs';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'org_employee_import_runs_organization_id_fkey';
+            columns: ['organization_id'];
+            isOneToOne: false;
+            referencedRelation: 'organizations';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'org_employee_import_runs_previous_run_id_fkey';
+            columns: ['previous_run_id'];
+            isOneToOne: false;
+            referencedRelation: 'org_employee_import_runs';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
       org_employees: {
         Row: {
           business_unit: string | null;

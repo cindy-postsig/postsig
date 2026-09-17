@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useMemo, useState } from 'react';
+import Link from 'next/link';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -41,6 +42,8 @@ interface EmployeesPageClientProps {
   initialEmployees: OrgEmployee[];
   orgGroups: Array<{ id: number; name: string }>;
   initialImportMapping: EmployeeImportMapping | null;
+  /** Latest delta-report run; null until a replacement file has been imported. */
+  initialImportRunId: number | null;
 }
 
 export function EmployeesPageClient({
@@ -48,8 +51,10 @@ export function EmployeesPageClient({
   initialEmployees,
   orgGroups,
   initialImportMapping,
+  initialImportRunId,
 }: EmployeesPageClientProps) {
   const [importMapping, setImportMapping] = useState(initialImportMapping);
+  const [importRunId, setImportRunId] = useState(initialImportRunId);
   const [employees, setEmployees] = useState(initialEmployees);
   const [search, setSearch] = useState('');
   const [isImportOpen, setIsImportOpen] = useState(false);
@@ -177,6 +182,13 @@ export function EmployeesPageClient({
           )}
         </div>
         <div className="flex gap-2">
+          {importRunId !== null && (
+            <Button variant="ghost" size="sm" asChild>
+              <Link href={`/settings/employees/import-report/${importRunId}`}>
+                View import report
+              </Link>
+            </Button>
+          )}
           <Button variant="outline" size="sm" onClick={openAdd}>
             Add Employee
           </Button>
@@ -199,8 +211,9 @@ export function EmployeesPageClient({
                 <ImportEmployees
                   savedMapping={importMapping}
                   orgGroups={orgGroups}
-                  onImportComplete={() => {
+                  onImportComplete={(newImportRunId) => {
                     setIsImportOpen(false);
+                    if (newImportRunId !== null) setImportRunId(newImportRunId);
                     refreshEmployees();
                   }}
                   onMappingSaved={setImportMapping}

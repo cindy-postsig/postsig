@@ -25,7 +25,8 @@ type Step = 'upload' | 'map' | 'preview';
 type Props = {
   savedMapping: EmployeeImportMapping | null;
   orgGroups: Array<{ id: number; name: string }>;
-  onImportComplete: () => void;
+  /** Receives the delta-report run id, or null when no report was recorded. */
+  onImportComplete: (importRunId: number | null) => void;
   onMappingSaved?: (mapping: EmployeeImportMapping) => void;
 };
 
@@ -227,7 +228,7 @@ export function ImportEmployees({
         variant: result.errors.length > 0 ? 'destructive' : 'default',
       });
 
-      if (result.errors.length === 0) onImportComplete();
+      if (result.errors.length === 0) onImportComplete(result.importRunId);
     } catch (err) {
       logger.error({ err }, 'Failed to import employees');
       toast({

@@ -109,6 +109,7 @@ export async function commitEmployeeImport(c: Context) {
       userMetadata.organizationId,
       file,
       mapping,
+      userMetadata.userId ?? null,
     );
 
     logger.info(
