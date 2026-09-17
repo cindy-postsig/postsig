@@ -1,0 +1,2726 @@
+{
+  "generate": {
+    "standardMultiYear": {
+      "minimal": [
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 51044,
+          "feesUSD": 51044
+        },
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 51044,
+          "feesUSD": 51044
+        },
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2029-01-01",
+          "endDate": "2029-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 51044,
+          "feesUSD": 51044
+        },
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 56044,
+          "feesUSD": 56044
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 163132,
+        "annualContractValue": 56044
+      }
+    },
+    "yearRenewalHint": {
+      "minimal": [
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 1000,
+          "feesUSD": 1000
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 1000,
+          "feesUSD": 1000
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2029-01-01",
+          "endDate": "2029-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 1000,
+          "feesUSD": 1000
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 2100,
+        "annualContractValue": 1100
+      }
+    },
+    "gartnerStub": {
+      "minimal": [
+        {
+          "startDate": "2025-10-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 0,
+          "feesUSD": 0
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 184500,
+          "feesUSD": 184500
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "projected",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2029-01-01",
+          "endDate": "2029-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 2,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2030-01-01",
+          "endDate": "2030-03-31",
+          "termType": "projected",
+          "yearWithinTerm": 3,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2030-04-01",
+          "endDate": "2031-03-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2031-04-01",
+          "endDate": "2032-03-31",
+          "termType": "projected",
+          "yearWithinTerm": 2,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2032-04-01",
+          "endDate": "2032-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 3,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2025-10-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 0,
+          "feesUSD": 0
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 184500,
+          "feesUSD": 184500
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "projected",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2029-01-01",
+          "endDate": "2029-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 2,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2030-01-01",
+          "endDate": "2030-03-31",
+          "termType": "projected",
+          "yearWithinTerm": 3,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2030-04-01",
+          "endDate": "2031-03-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2031-04-01",
+          "endDate": "2032-03-31",
+          "termType": "projected",
+          "yearWithinTerm": 2,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2032-04-01",
+          "endDate": "2032-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 3,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2032-07-01",
+          "endDate": "2033-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2033-07-01",
+          "endDate": "2034-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 2,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2034-07-01",
+          "endDate": "2034-09-30",
+          "termType": "projected",
+          "yearWithinTerm": 3,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2025-10-01",
+          "endDate": "2025-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 0,
+          "feesUSD": 0
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 184500,
+          "feesUSD": 184500
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "projected",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2030-03-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 191870,
+          "feesUSD": 191870
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 376370,
+        "annualContractValue": 184500
+      }
+    },
+    "eighteenMonth": {
+      "minimal": [
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2026-06-30",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2026-07-01",
+          "endDate": "2027-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2029-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2029-07-01",
+          "endDate": "2030-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2026-06-30",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2026-07-01",
+          "endDate": "2027-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2029-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2029-07-01",
+          "endDate": "2030-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2031-01-01",
+          "endDate": "2032-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 4,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2026-06-30",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2026-07-01",
+          "endDate": "2027-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 5000,
+          "feesUSD": 5000
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2029-06-30",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 5000,
+          "feesUSD": 5000
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 5000,
+        "annualContractValue": 5000
+      }
+    },
+    "oneTime": {
+      "minimal": [
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 8000,
+          "feesUSD": 8000
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 8000,
+          "feesUSD": 8000
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 8000,
+          "feesUSD": 8000
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 8000,
+        "annualContractValue": 8000
+      }
+    },
+    "willNotRenew": {
+      "minimal": [
+        {
+          "startDate": "2026-06-01",
+          "endDate": "2027-05-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 9000,
+          "feesUSD": 9000
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2026-06-01",
+          "endDate": "2027-05-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 9000,
+          "feesUSD": 9000
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2026-06-01",
+          "endDate": "2027-05-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "current",
+          "isCurrentTerm": true,
+          "isActivePeriod": true,
+          "fees": 9000,
+          "feesUSD": 9000
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 9000,
+        "annualContractValue": 9000
+      }
+    },
+    "annualIncrease": {
+      "minimal": [
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 1000,
+          "feesUSD": 1000
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 1210,
+          "feesUSD": 1210
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1331,
+          "feesUSD": 1331
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 4,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1464.1,
+          "feesUSD": 1464.1
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 1000,
+          "feesUSD": 1000
+        },
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "historical",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 1210,
+          "feesUSD": 1210
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1331,
+          "feesUSD": 1331
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 4,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1464.1,
+          "feesUSD": 1464.1
+        },
+        {
+          "startDate": "2029-01-01",
+          "endDate": "2029-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 5,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1610.51,
+          "feesUSD": 1610.51
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 1000,
+          "feesUSD": 1000
+        },
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "historical",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1100,
+          "feesUSD": 1100
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 1210,
+          "feesUSD": 1210
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1331,
+          "feesUSD": 1331
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 4,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 1464.1,
+          "feesUSD": 1464.1
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 1000,
+        "annualContractValue": 1000
+      }
+    },
+    "annualIncreaseRenewalCycle": {
+      "minimal": [
+        {
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2023-01-01",
+          "endDate": "2023-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 10816,
+          "feesUSD": 10816
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 11248.64,
+          "feesUSD": 11248.64
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 4,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 11698.5856,
+          "feesUSD": 11698.5856
+        }
+      ],
+      "full": [
+        {
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2023-01-01",
+          "endDate": "2023-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "historical",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 10400,
+          "feesUSD": 10400
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 10816,
+          "feesUSD": 10816
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 11248.64,
+          "feesUSD": 11248.64
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 4,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 11698.5856,
+          "feesUSD": 11698.5856
+        },
+        {
+          "startDate": "2029-01-01",
+          "endDate": "2029-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 5,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 12166.529024,
+          "feesUSD": 12166.529024
+        }
+      ],
+      "max": [
+        {
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 1,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2023-01-01",
+          "endDate": "2023-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 2,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "termType": "initial",
+          "yearWithinTerm": 3,
+          "renewalCount": 0,
+          "status": "historical",
+          "isCurrentTerm": true,
+          "isActivePeriod": false,
+          "fees": 10000,
+          "feesUSD": 10000
+        },
+        {
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 1,
+          "status": "historical",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 10400,
+          "feesUSD": 10400
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "termType": "renewal",
+          "yearWithinTerm": 1,
+          "renewalCount": 2,
+          "status": "current",
+          "isCurrentTerm": false,
+          "isActivePeriod": true,
+          "fees": 10816,
+          "feesUSD": 10816
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 3,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 11248.64,
+          "feesUSD": 11248.64
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "termType": "projected",
+          "yearWithinTerm": 1,
+          "renewalCount": 4,
+          "status": "projected",
+          "isCurrentTerm": false,
+          "isActivePeriod": false,
+          "fees": 11698.5856,
+          "feesUSD": 11698.5856
+        }
+      ],
+      "tcv": {
+        "totalContractValue": 30000,
+        "annualContractValue": 10000
+      }
+    }
+  },
+  "extractors": {
+    "standardMultiYear": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-01",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-02",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-03",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-04",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-05",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-06",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-07",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-08",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-09",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-10",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-11",
+          "value": 4670.33
+        },
+        {
+          "key": "2026-12",
+          "value": 4670.33
+        }
+      ],
+      "amortizedProjected": [
+        {
+          "key": "2027-01",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-02",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-03",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-04",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-05",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-06",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-07",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-08",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-09",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-10",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-11",
+          "value": 4670.33
+        },
+        {
+          "key": "2027-12",
+          "value": 4670.33
+        }
+      ],
+      "actualCurrent": [
+        {
+          "key": "2026-01",
+          "value": 14011
+        },
+        {
+          "key": "2026-04",
+          "value": 14011
+        },
+        {
+          "key": "2026-07",
+          "value": 14011
+        },
+        {
+          "key": "2026-10",
+          "value": 14011
+        }
+      ],
+      "actualProjected": [
+        {
+          "key": "2027-01",
+          "value": 14011
+        },
+        {
+          "key": "2027-04",
+          "value": 14011
+        },
+        {
+          "key": "2027-07",
+          "value": 14011
+        },
+        {
+          "key": "2027-10",
+          "value": 14011
+        }
+      ],
+      "renewalsCurrent": [
+        {
+          "key": "2026-12",
+          "value": 56044
+        }
+      ],
+      "renewalsProjected": [],
+      "tcv": [
+        {
+          "key": "2026-12",
+          "value": 163132
+        }
+      ]
+    },
+    "yearRenewalHint": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-01",
+          "value": 91.67
+        },
+        {
+          "key": "2026-02",
+          "value": 91.67
+        },
+        {
+          "key": "2026-03",
+          "value": 91.67
+        },
+        {
+          "key": "2026-04",
+          "value": 91.67
+        },
+        {
+          "key": "2026-05",
+          "value": 91.67
+        },
+        {
+          "key": "2026-06",
+          "value": 91.67
+        },
+        {
+          "key": "2026-07",
+          "value": 91.67
+        },
+        {
+          "key": "2026-08",
+          "value": 91.67
+        },
+        {
+          "key": "2026-09",
+          "value": 91.67
+        },
+        {
+          "key": "2026-10",
+          "value": 91.67
+        },
+        {
+          "key": "2026-11",
+          "value": 91.67
+        },
+        {
+          "key": "2026-12",
+          "value": 91.67
+        }
+      ],
+      "amortizedProjected": [
+        {
+          "key": "2027-01",
+          "value": 91.67
+        },
+        {
+          "key": "2027-02",
+          "value": 91.67
+        },
+        {
+          "key": "2027-03",
+          "value": 91.67
+        },
+        {
+          "key": "2027-04",
+          "value": 91.67
+        },
+        {
+          "key": "2027-05",
+          "value": 91.67
+        },
+        {
+          "key": "2027-06",
+          "value": 91.67
+        },
+        {
+          "key": "2027-07",
+          "value": 91.67
+        },
+        {
+          "key": "2027-08",
+          "value": 91.67
+        },
+        {
+          "key": "2027-09",
+          "value": 91.67
+        },
+        {
+          "key": "2027-10",
+          "value": 91.67
+        },
+        {
+          "key": "2027-11",
+          "value": 91.67
+        },
+        {
+          "key": "2027-12",
+          "value": 91.67
+        }
+      ],
+      "actualCurrent": [
+        {
+          "key": "2026-01",
+          "value": 1100
+        }
+      ],
+      "actualProjected": [
+        {
+          "key": "2027-01",
+          "value": 1100
+        }
+      ],
+      "renewalsCurrent": [],
+      "renewalsProjected": [],
+      "tcv": [
+        {
+          "key": "2026-07",
+          "value": 0
+        },
+        {
+          "key": "2026-08",
+          "value": 0
+        },
+        {
+          "key": "2026-09",
+          "value": 0
+        },
+        {
+          "key": "2026-10",
+          "value": 0
+        },
+        {
+          "key": "2026-11",
+          "value": 0
+        },
+        {
+          "key": "2026-12",
+          "value": 0
+        },
+        {
+          "key": "2027-01",
+          "value": 0
+        },
+        {
+          "key": "2027-02",
+          "value": 0
+        },
+        {
+          "key": "2027-03",
+          "value": 0
+        },
+        {
+          "key": "2027-04",
+          "value": 0
+        },
+        {
+          "key": "2027-05",
+          "value": 0
+        },
+        {
+          "key": "2027-06",
+          "value": 0
+        },
+        {
+          "key": "2027-07",
+          "value": 0
+        }
+      ]
+    },
+    "gartnerStub": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-01",
+          "value": 15375
+        },
+        {
+          "key": "2026-02",
+          "value": 15375
+        },
+        {
+          "key": "2026-03",
+          "value": 15375
+        },
+        {
+          "key": "2026-04",
+          "value": 15375
+        },
+        {
+          "key": "2026-05",
+          "value": 15375
+        },
+        {
+          "key": "2026-06",
+          "value": 15375
+        },
+        {
+          "key": "2026-07",
+          "value": 15375
+        },
+        {
+          "key": "2026-08",
+          "value": 15375
+        },
+        {
+          "key": "2026-09",
+          "value": 15375
+        },
+        {
+          "key": "2026-10",
+          "value": 15375
+        },
+        {
+          "key": "2026-11",
+          "value": 15375
+        },
+        {
+          "key": "2026-12",
+          "value": 15375
+        }
+      ],
+      "amortizedProjected": [
+        {
+          "key": "2027-01",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-02",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-03",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-04",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-05",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-06",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-07",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-08",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-09",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-10",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-11",
+          "value": 15989.17
+        },
+        {
+          "key": "2027-12",
+          "value": 15989.17
+        }
+      ],
+      "actualCurrent": [
+        {
+          "key": "2026-01",
+          "value": 184500
+        }
+      ],
+      "actualProjected": [
+        {
+          "key": "2027-01",
+          "value": 191870
+        }
+      ],
+      "renewalsCurrent": [],
+      "renewalsProjected": [
+        {
+          "key": "2027-12",
+          "value": 191870
+        }
+      ],
+      "tcv": [
+        {
+          "key": "2027-Q4",
+          "value": 376370
+        }
+      ]
+    },
+    "eighteenMonth": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-01",
+          "value": 277.78
+        },
+        {
+          "key": "2026-02",
+          "value": 277.78
+        },
+        {
+          "key": "2026-03",
+          "value": 277.78
+        },
+        {
+          "key": "2026-04",
+          "value": 277.78
+        },
+        {
+          "key": "2026-05",
+          "value": 277.78
+        },
+        {
+          "key": "2026-06",
+          "value": 277.78
+        },
+        {
+          "key": "2026-07",
+          "value": 277.78
+        },
+        {
+          "key": "2026-08",
+          "value": 277.78
+        },
+        {
+          "key": "2026-09",
+          "value": 277.78
+        },
+        {
+          "key": "2026-10",
+          "value": 277.78
+        },
+        {
+          "key": "2026-11",
+          "value": 277.78
+        },
+        {
+          "key": "2026-12",
+          "value": 277.78
+        }
+      ],
+      "amortizedProjected": [
+        {
+          "key": "2027-01",
+          "value": 277.78
+        },
+        {
+          "key": "2027-02",
+          "value": 277.78
+        },
+        {
+          "key": "2027-03",
+          "value": 277.78
+        },
+        {
+          "key": "2027-04",
+          "value": 277.78
+        },
+        {
+          "key": "2027-05",
+          "value": 277.78
+        },
+        {
+          "key": "2027-06",
+          "value": 277.78
+        },
+        {
+          "key": "2027-07",
+          "value": 277.78
+        },
+        {
+          "key": "2027-08",
+          "value": 277.78
+        },
+        {
+          "key": "2027-09",
+          "value": 277.78
+        },
+        {
+          "key": "2027-10",
+          "value": 277.78
+        },
+        {
+          "key": "2027-11",
+          "value": 277.78
+        },
+        {
+          "key": "2027-12",
+          "value": 277.78
+        }
+      ],
+      "actualCurrent": [
+        {
+          "key": "2026-01",
+          "value": 833.33
+        },
+        {
+          "key": "2026-04",
+          "value": 833.33
+        },
+        {
+          "key": "2026-07",
+          "value": 833.33
+        },
+        {
+          "key": "2026-10",
+          "value": 833.33
+        }
+      ],
+      "actualProjected": [
+        {
+          "key": "2027-01",
+          "value": 833.33
+        },
+        {
+          "key": "2027-04",
+          "value": 833.33
+        },
+        {
+          "key": "2027-07",
+          "value": 833.33
+        },
+        {
+          "key": "2027-10",
+          "value": 833.33
+        }
+      ],
+      "renewalsCurrent": [
+        {
+          "key": "2026-06",
+          "value": 5000
+        }
+      ],
+      "renewalsProjected": [],
+      "tcv": [
+        {
+          "key": "2026-07",
+          "value": 0
+        },
+        {
+          "key": "2026-08",
+          "value": 0
+        },
+        {
+          "key": "2026-09",
+          "value": 0
+        },
+        {
+          "key": "2026-10",
+          "value": 0
+        },
+        {
+          "key": "2026-11",
+          "value": 0
+        },
+        {
+          "key": "2026-12",
+          "value": 0
+        },
+        {
+          "key": "2027-01",
+          "value": 0
+        },
+        {
+          "key": "2027-02",
+          "value": 0
+        },
+        {
+          "key": "2027-03",
+          "value": 0
+        },
+        {
+          "key": "2027-04",
+          "value": 0
+        },
+        {
+          "key": "2027-05",
+          "value": 0
+        },
+        {
+          "key": "2027-06",
+          "value": 0
+        },
+        {
+          "key": "2027-07",
+          "value": 0
+        }
+      ]
+    },
+    "oneTime": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-01",
+          "value": 666.67
+        },
+        {
+          "key": "2026-02",
+          "value": 666.67
+        },
+        {
+          "key": "2026-03",
+          "value": 666.67
+        },
+        {
+          "key": "2026-04",
+          "value": 666.67
+        },
+        {
+          "key": "2026-05",
+          "value": 666.67
+        },
+        {
+          "key": "2026-06",
+          "value": 666.67
+        },
+        {
+          "key": "2026-07",
+          "value": 666.67
+        },
+        {
+          "key": "2026-08",
+          "value": 666.67
+        },
+        {
+          "key": "2026-09",
+          "value": 666.67
+        },
+        {
+          "key": "2026-10",
+          "value": 666.67
+        },
+        {
+          "key": "2026-11",
+          "value": 666.67
+        },
+        {
+          "key": "2026-12",
+          "value": 666.67
+        }
+      ],
+      "amortizedProjected": [],
+      "actualCurrent": [
+        {
+          "key": "2026-01",
+          "value": 8000
+        }
+      ],
+      "actualProjected": [],
+      "renewalsCurrent": [],
+      "renewalsProjected": [],
+      "tcv": [
+        {
+          "key": "2026-12",
+          "value": 8000
+        }
+      ]
+    },
+    "willNotRenew": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-06",
+          "value": 750
+        },
+        {
+          "key": "2026-07",
+          "value": 750
+        },
+        {
+          "key": "2026-08",
+          "value": 750
+        },
+        {
+          "key": "2026-09",
+          "value": 750
+        },
+        {
+          "key": "2026-10",
+          "value": 750
+        },
+        {
+          "key": "2026-11",
+          "value": 750
+        },
+        {
+          "key": "2026-12",
+          "value": 750
+        }
+      ],
+      "amortizedProjected": [
+        {
+          "key": "2027-01",
+          "value": 750
+        },
+        {
+          "key": "2027-02",
+          "value": 750
+        },
+        {
+          "key": "2027-03",
+          "value": 750
+        },
+        {
+          "key": "2027-04",
+          "value": 750
+        },
+        {
+          "key": "2027-05",
+          "value": 750
+        }
+      ],
+      "actualCurrent": [
+        {
+          "key": "2026-06",
+          "value": 9000
+        }
+      ],
+      "actualProjected": [],
+      "renewalsCurrent": [],
+      "renewalsProjected": [],
+      "tcv": [
+        {
+          "key": "2026-07",
+          "value": 0
+        },
+        {
+          "key": "2026-08",
+          "value": 0
+        },
+        {
+          "key": "2026-09",
+          "value": 0
+        },
+        {
+          "key": "2026-10",
+          "value": 0
+        },
+        {
+          "key": "2026-11",
+          "value": 0
+        },
+        {
+          "key": "2026-12",
+          "value": 0
+        },
+        {
+          "key": "2027-01",
+          "value": 0
+        },
+        {
+          "key": "2027-02",
+          "value": 0
+        },
+        {
+          "key": "2027-03",
+          "value": 0
+        },
+        {
+          "key": "2027-04",
+          "value": 0
+        },
+        {
+          "key": "2027-05",
+          "value": 0
+        }
+      ]
+    },
+    "annualIncrease": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-01",
+          "value": 100.83
+        },
+        {
+          "key": "2026-02",
+          "value": 100.83
+        },
+        {
+          "key": "2026-03",
+          "value": 100.83
+        },
+        {
+          "key": "2026-04",
+          "value": 100.83
+        },
+        {
+          "key": "2026-05",
+          "value": 100.83
+        },
+        {
+          "key": "2026-06",
+          "value": 100.83
+        },
+        {
+          "key": "2026-07",
+          "value": 100.83
+        },
+        {
+          "key": "2026-08",
+          "value": 100.83
+        },
+        {
+          "key": "2026-09",
+          "value": 100.83
+        },
+        {
+          "key": "2026-10",
+          "value": 100.83
+        },
+        {
+          "key": "2026-11",
+          "value": 100.83
+        },
+        {
+          "key": "2026-12",
+          "value": 100.83
+        }
+      ],
+      "amortizedProjected": [
+        {
+          "key": "2027-01",
+          "value": 110.92
+        },
+        {
+          "key": "2027-02",
+          "value": 110.92
+        },
+        {
+          "key": "2027-03",
+          "value": 110.92
+        },
+        {
+          "key": "2027-04",
+          "value": 110.92
+        },
+        {
+          "key": "2027-05",
+          "value": 110.92
+        },
+        {
+          "key": "2027-06",
+          "value": 110.92
+        },
+        {
+          "key": "2027-07",
+          "value": 110.92
+        },
+        {
+          "key": "2027-08",
+          "value": 110.92
+        },
+        {
+          "key": "2027-09",
+          "value": 110.92
+        },
+        {
+          "key": "2027-10",
+          "value": 110.92
+        },
+        {
+          "key": "2027-11",
+          "value": 110.92
+        },
+        {
+          "key": "2027-12",
+          "value": 110.92
+        }
+      ],
+      "actualCurrent": [
+        {
+          "key": "2026-01",
+          "value": 1210
+        }
+      ],
+      "actualProjected": [
+        {
+          "key": "2027-01",
+          "value": 1331
+        }
+      ],
+      "renewalsCurrent": [],
+      "renewalsProjected": [],
+      "tcv": [
+        {
+          "key": "2026-07",
+          "value": 0
+        },
+        {
+          "key": "2026-08",
+          "value": 0
+        },
+        {
+          "key": "2026-09",
+          "value": 0
+        },
+        {
+          "key": "2026-10",
+          "value": 0
+        },
+        {
+          "key": "2026-11",
+          "value": 0
+        },
+        {
+          "key": "2026-12",
+          "value": 0
+        },
+        {
+          "key": "2027-01",
+          "value": 0
+        },
+        {
+          "key": "2027-02",
+          "value": 0
+        },
+        {
+          "key": "2027-03",
+          "value": 0
+        },
+        {
+          "key": "2027-04",
+          "value": 0
+        },
+        {
+          "key": "2027-05",
+          "value": 0
+        },
+        {
+          "key": "2027-06",
+          "value": 0
+        },
+        {
+          "key": "2027-07",
+          "value": 0
+        }
+      ]
+    },
+    "annualIncreaseRenewalCycle": {
+      "amortizedCurrent": [
+        {
+          "key": "2026-01",
+          "value": 901.33
+        },
+        {
+          "key": "2026-02",
+          "value": 901.33
+        },
+        {
+          "key": "2026-03",
+          "value": 901.33
+        },
+        {
+          "key": "2026-04",
+          "value": 901.33
+        },
+        {
+          "key": "2026-05",
+          "value": 901.33
+        },
+        {
+          "key": "2026-06",
+          "value": 901.33
+        },
+        {
+          "key": "2026-07",
+          "value": 901.33
+        },
+        {
+          "key": "2026-08",
+          "value": 901.33
+        },
+        {
+          "key": "2026-09",
+          "value": 901.33
+        },
+        {
+          "key": "2026-10",
+          "value": 901.33
+        },
+        {
+          "key": "2026-11",
+          "value": 901.33
+        },
+        {
+          "key": "2026-12",
+          "value": 901.33
+        }
+      ],
+      "amortizedProjected": [
+        {
+          "key": "2027-01",
+          "value": 937.39
+        },
+        {
+          "key": "2027-02",
+          "value": 937.39
+        },
+        {
+          "key": "2027-03",
+          "value": 937.39
+        },
+        {
+          "key": "2027-04",
+          "value": 937.39
+        },
+        {
+          "key": "2027-05",
+          "value": 937.39
+        },
+        {
+          "key": "2027-06",
+          "value": 937.39
+        },
+        {
+          "key": "2027-07",
+          "value": 937.39
+        },
+        {
+          "key": "2027-08",
+          "value": 937.39
+        },
+        {
+          "key": "2027-09",
+          "value": 937.39
+        },
+        {
+          "key": "2027-10",
+          "value": 937.39
+        },
+        {
+          "key": "2027-11",
+          "value": 937.39
+        },
+        {
+          "key": "2027-12",
+          "value": 937.39
+        }
+      ],
+      "actualCurrent": [
+        {
+          "key": "2026-01",
+          "value": 10816
+        }
+      ],
+      "actualProjected": [
+        {
+          "key": "2027-01",
+          "value": 11248.64
+        }
+      ],
+      "renewalsCurrent": [],
+      "renewalsProjected": [],
+      "tcv": [
+        {
+          "key": "2026-07",
+          "value": 0
+        },
+        {
+          "key": "2026-08",
+          "value": 0
+        },
+        {
+          "key": "2026-09",
+          "value": 0
+        },
+        {
+          "key": "2026-10",
+          "value": 0
+        },
+        {
+          "key": "2026-11",
+          "value": 0
+        },
+        {
+          "key": "2026-12",
+          "value": 0
+        },
+        {
+          "key": "2027-01",
+          "value": 0
+        },
+        {
+          "key": "2027-02",
+          "value": 0
+        },
+        {
+          "key": "2027-03",
+          "value": 0
+        },
+        {
+          "key": "2027-04",
+          "value": 0
+        },
+        {
+          "key": "2027-05",
+          "value": 0
+        },
+        {
+          "key": "2027-06",
+          "value": 0
+        },
+        {
+          "key": "2027-07",
+          "value": 0
+        }
+      ]
+    }
+  },
+  "enrichWithEffectiveFees": [
+    {
+      "id": 646,
+      "effectiveTotalContractValueUSD": 0,
+      "isFullySuperseded": true,
+      "isFullySuperseding": false,
+      "periods": [
+        {
+          "startDate": "2023-01-01",
+          "endDate": "2023-12-31",
+          "fees": 10000,
+          "feesUSD": 10000,
+          "effectiveFees": 0,
+          "effectiveFeesUSD": 0,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 10000,
+              "feesUSD": 10000,
+              "isSuperseded": true,
+              "isEffectivelySuperseded": true
+            }
+          ]
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "fees": 10000,
+          "feesUSD": 10000,
+          "effectiveFees": 0,
+          "effectiveFeesUSD": 0,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 12000,
+              "feesUSD": 12000,
+              "isSuperseded": true,
+              "isAmended": true,
+              "isSuperseding": false,
+              "isEffectivelySuperseded": true
+            }
+          ]
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "fees": 10000,
+          "feesUSD": 10000,
+          "effectiveFees": 0,
+          "effectiveFeesUSD": 0,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 12000,
+              "feesUSD": 12000,
+              "isSuperseded": true,
+              "isAmended": true,
+              "isSuperseding": false,
+              "isEffectivelySuperseded": true
+            }
+          ]
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "fees": 10000,
+          "feesUSD": 10000,
+          "effectiveFees": 0,
+          "effectiveFeesUSD": 0,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 12000,
+              "feesUSD": 12000,
+              "isSuperseded": true,
+              "isAmended": true,
+              "isSuperseding": false,
+              "isEffectivelySuperseded": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 657,
+      "effectiveTotalContractValueUSD": 12000,
+      "isFullySuperseded": false,
+      "isFullySuperseding": true,
+      "periods": [
+        {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "fees": 12000,
+          "feesUSD": 12000,
+          "effectiveFees": 12000,
+          "effectiveFeesUSD": 12000,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 12000,
+              "feesUSD": 12000,
+              "isSuperseded": false,
+              "isSuperseding": true,
+              "isEffectivelySuperseded": false
+            }
+          ]
+        },
+        {
+          "startDate": "2026-01-01",
+          "endDate": "2026-12-31",
+          "fees": 12000,
+          "feesUSD": 12000,
+          "effectiveFees": 12000,
+          "effectiveFeesUSD": 12000,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 12000,
+              "feesUSD": 12000,
+              "isSuperseded": false,
+              "isSuperseding": true,
+              "isEffectivelySuperseded": false
+            }
+          ]
+        },
+        {
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "fees": 12000,
+          "feesUSD": 12000,
+          "effectiveFees": 12000,
+          "effectiveFeesUSD": 12000,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 12000,
+              "feesUSD": 12000,
+              "isSuperseded": false,
+              "isSuperseding": true,
+              "isEffectivelySuperseded": false
+            }
+          ]
+        },
+        {
+          "startDate": "2028-01-01",
+          "endDate": "2028-12-31",
+          "fees": 12000,
+          "feesUSD": 12000,
+          "effectiveFees": 12000,
+          "effectiveFeesUSD": 12000,
+          "productFees": [
+            {
+              "productId": 71,
+              "fees": 12000,
+              "feesUSD": 12000,
+              "isSuperseded": false,
+              "isSuperseding": true,
+              "isEffectivelySuperseded": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

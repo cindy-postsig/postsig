@@ -1,0 +1,5 @@
+-- Intentionally empty. This version once carried the ACL -> cost allocation
+-- data backfill; data passes do not belong in migrations (a local reset
+-- replays every one of them). The backfill now runs per environment via
+-- scripts/backfill-cost-allocation-acl.ts. The file stays so environments
+-- that already recorded this version need no history repair.

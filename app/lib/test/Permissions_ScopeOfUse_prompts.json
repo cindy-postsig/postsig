@@ -1,0 +1,74 @@
+[
+  {
+    "dbName": "End Users ",
+    "query": [
+      "What are the number of users, along with their group/department/Job function and user locations if provided.",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  },
+  {
+    "dbName": "Market Data Types",
+    "query": [
+      "What is a description of the products to be used by end users. Ex: Real time quotes, delayed quotes, historical data.",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  },
+  {
+    "dbName": "Internal/External Users",
+    "query": [
+      "Is this product for internal or external users?",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  },
+  {
+    "dbName": "Exclusivity",
+    "query": [
+      "Are the contract terms for data or services exclusive or non-exclusive? YES or NO",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  },
+  {
+    "dbName": "Distribution Rights",
+    "query": [
+      "What are the distribution rights.",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  },
+  {
+    "dbName": "Geographic Restrictions",
+    "query": [
+      " What are the geographic restrictions? Ex: Global, North America, Americas, Asia, prohibitions against doing business with sanctioned countries, etc",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  },
+  {
+    "dbName": "Derivative Works",
+    "query": [
+      "What are the derivative works restrictions? Ex: Can a user combine the vendor data into other offerings to be shared with clients or used internally?",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  },
+  {
+    "dbName": " Activities",
+    "query": [
+      "What activities are allowed? Ex: Trading, Research, Sales",
+      "your entire response/output is going to consist of a single JSON array of JSON objects, and you will NOT wrap it within JSON md markers or newlines.",
+      "Do not attach any document references.",
+      "Please return only the array with each result in a 'value' field as in [{\"value\": },]"
+    ]
+  }
+]

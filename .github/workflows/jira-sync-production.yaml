@@ -1,0 +1,58 @@
+name: Jira Sync — Production
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions: {}
+
+concurrency:
+  group: jira-sync-production
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    permissions:
+      contents: read
+      pull-requests: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+
+      - name: Resolve previous release tag
+        id: prev
+        env:
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          PREV=$(git describe --tags --abbrev=0 "$REF_NAME^" 2>/dev/null || echo "")
+          if [ -z "$PREV" ]; then
+            echo "No previous tag found — skipping Jira promotion"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=$PREV" >> "$GITHUB_OUTPUT"
+            echo "Previous tag: $PREV"
+          fi
+
+      - name: Promote Verified:Staging → Deployed:Prod
+        if: steps.prev.outputs.skip != 'true'
+        env:
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PREV_TAG: ${{ steps.prev.outputs.tag }}
+          NEW_TAG: ${{ github.ref_name }}
+        run: |
+          node scripts/jira-sync.js promote \
+            "Verified: Staging" \
+            "Deployed: Prod" \
+            "$PREV_TAG" \
+            "$NEW_TAG"

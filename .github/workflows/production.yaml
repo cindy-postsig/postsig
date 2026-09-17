@@ -1,0 +1,80 @@
+name: Deploy Production
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.PRODUCTION_DB_PASSWORD }}
+      SUPABASE_PROJECT_ID: ${{ secrets.PRODUCTION_PROJECT_ID }}
+
+    steps:
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
+        with:
+          persist-credentials: false
+
+      - uses: supabase/setup-cli@ab058987d8d6c725971f6cf9d0b5c98467e30bd1 # v1
+        with:
+          version: 2.101.0
+
+      - name: Link Supabase project
+        run: supabase link --project-ref $SUPABASE_PROJECT_ID --password $SUPABASE_DB_PASSWORD
+
+      - name: Push database migrations
+        run: supabase db push --include-all
+
+      - name: Deploy edge functions
+        run: supabase functions deploy
+
+  deploy:
+    needs: migrate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    environment: production
+
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+    steps:
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
+        with:
+          persist-credentials: false
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@54.5.0
+
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: Configure Tiptap Registry
+        run: |
+          npm config set @tiptap-pro:registry https://registry.tiptap.dev/
+          npm config set //registry.tiptap.dev/:_authToken ${{ secrets.TIPTAP_AUTH_TOKEN }}
+
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_OPTIONS: '--max_old_space_size=4096'
+
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

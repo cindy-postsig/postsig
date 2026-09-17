@@ -1,0 +1,16 @@
+-- Intentionally a no-op.
+--
+-- This version originally backfilled already-provisioned portco recipients into
+-- inv_portco_user and stripped the investor-org membership they were given.
+-- Nulling users.organization_id is refused by contract_acl_user_org_user_fkey,
+-- which references users(organization_id, id) with ON DELETE CASCADE but no
+-- ON UPDATE action, so the deploy aborts on any recipient who also holds CPM
+-- access. That overlap is routine, not exceptional: provisionAndEmailRecipient
+-- matches recipients by email, so an existing CPM user who is sent a reporting
+-- request lands in the backfill's target set.
+--
+-- The backfill only covered recipients provisioned before inv_portco_user
+-- existed and never reached production, so it is dropped rather than repaired;
+-- provisioning writes inv_portco_user directly from here on. The version stays
+-- recorded so environments that already applied it keep a consistent migration
+-- history.

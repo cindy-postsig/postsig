@@ -1,0 +1,243 @@
+#upload .filepond--panel-root {
+  background-color: transparent;
+}
+
+#upload .filepond--wrapper {
+  padding-bottom: 40px;
+}
+
+#upload .filepond--root {
+  /* min-height: calc(100vh - 300px) !important; */
+  margin: 0;
+  font-family: 'Arizona Mix';
+}
+
+#upload.show-label::before {
+  content: 'Drop your folders or files here (PDF or ZIP)';
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arizona Mix';
+  letter-spacing: -0.025em;
+  font-variation-settings: 'wght' 250;
+  opacity: 1;
+  @apply left-7 top-0 text-3xl text-muted-foreground;
+}
+
+#upload .filepond--root::before {
+  content: '';
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), #f5f5f6);
+  border-radius: 10px;
+  @apply dark:bg-gradient-to-b dark:from-foreground/10 dark:to-background;
+}
+
+/* Hide FilePond's native item list to avoid duplicate queues */
+#upload .filepond--root {
+  display: none !important;
+}
+
+#upload .filepond--item-panel {
+  border-radius: 0.25em;
+  box-shadow: none;
+  background: transparent;
+}
+
+#upload .filepond--file {
+  color: black;
+  padding: 1rem;
+}
+
+#upload .filepond--file-info .filepond--file-info-main {
+  font-size: 0.9rem;
+}
+
+#upload .filepond--drip-blob {
+  background-color: var(--ps-blue);
+}
+
+#upload [data-filepond-item-state*='idle'] .filepond--panel {
+  background: linear-gradient(to bottom, #ffffff, #f5f5f6);
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+#upload [data-filepond-item-state*='busy processing'] .filepond--item-panel {
+  background-color: #d4d3df;
+}
+
+#upload [data-filepond-item-state='processing'] .filepond--item-panel {
+  background-color: #cdd1ff;
+}
+
+#upload [data-filepond-item-state='processing-complete'] .filepond--item-panel {
+  background-color: #dedde0;
+}
+
+#upload [data-filepond-item-state*='error'] .filepond--item-panel,
+#upload [data-filepond-item-state*='invalid'] .filepond--item-panel {
+  background-color: #ffc7e1;
+}
+
+#upload [data-filepond-item-state*='error'] .filepond--file,
+#upload [data-filepond-item-state*='invalid'] .filepond--file {
+  color: #a8004e;
+}
+
+#upload .filepond--processing-complete-indicator svg path {
+  fill: #09cd09;
+}
+
+#upload .filepond--root .filepond--drop-label {
+  min-height: 0;
+}
+
+.pagination {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    #f5f5f6 20%,
+    #f5f5f6
+  );
+}
+
+.docusign-file .filepond--file-info-main {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.docusign-file::before {
+  content: none;
+}
+
+.docusign-file .filepond--file-info-main::after {
+  content: '';
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-left: 12px;
+  content: '';
+  display: inline-block;
+  width: 90px;
+  height: 20px;
+  margin-left: 8px;
+  background-image: url('/docusign_black.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  opacity: 0.5;
+}
+
+.docusign-file .docusign-badge {
+  display: inline-block;
+  position: absolute !important;
+  right: 1rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 100 !important;
+  font-size: 1.2rem !important;
+  color: #2563eb !important;
+  pointer-events: none !important;
+}
+
+/* Upload Version Dialog Styles */
+.upload-version-dialog .filepond--panel-root {
+  background-color: transparent;
+}
+
+.upload-version-dialog .filepond--root {
+  margin-bottom: 0;
+}
+
+.upload-version-dialog .filepond--item {
+  margin: 0;
+}
+
+.upload-version-dialog .filepond--list {
+  margin: 0;
+  padding: 0;
+  position: static;
+}
+
+.upload-version-dialog .filepond--drop-label {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: hsl(var(--muted));
+  min-height: 80px;
+  font-size: 0.875rem;
+}
+
+.upload-version-dialog .filepond--item-panel {
+  border-radius: 0.25em;
+  box-shadow: none;
+}
+
+.upload-version-dialog .filepond--file {
+  padding: 0.5rem 0.75rem;
+  color: black;
+}
+
+.upload-version-dialog .filepond--file-info .filepond--file-info-main {
+  font-size: 0.85rem;
+}
+
+.upload-version-dialog .filepond--drip {
+  background: hsl(var(--primary) / 0.05);
+  border-radius: 8px;
+}
+
+.upload-version-dialog .filepond--drip-blob {
+  background-color: hsl(var(--primary));
+  opacity: 0.15;
+}
+
+.upload-version-dialog
+  [data-filepond-item-state*='idle']
+  .filepond--item-panel {
+  background: white;
+  border: 1px solid hsl(var(--border));
+}
+
+.upload-version-dialog
+  [data-filepond-item-state*='busy processing']
+  .filepond--item-panel {
+  background-color: #d4d3df;
+}
+
+.upload-version-dialog
+  [data-filepond-item-state='processing']
+  .filepond--item-panel {
+  background-color: #d4d3df;
+}
+
+.upload-version-dialog
+  [data-filepond-item-state='processing-complete']
+  .filepond--item-panel {
+  background-color: #dedde0;
+}
+
+.upload-version-dialog
+  [data-filepond-item-state*='error']
+  .filepond--item-panel,
+.upload-version-dialog
+  [data-filepond-item-state*='invalid']
+  .filepond--item-panel {
+  background-color: #ffc7e1;
+}
+
+.upload-version-dialog [data-filepond-item-state*='error'] .filepond--file,
+.upload-version-dialog [data-filepond-item-state*='invalid'] .filepond--file {
+  color: #a8004e;
+}
+
+.upload-version-dialog .filepond--processing-complete-indicator svg path {
+  fill: #09cd09;
+}

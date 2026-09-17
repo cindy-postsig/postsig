@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "extends": ["next", "prettier"],
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  },
+  "overrides": [
+    {
+      "files": ["scripts/**/*.{js,mjs,ts}", "supabase/functions/**/*.{js,ts}"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": ["components/**/*.{ts,tsx}", "app/ui/**/*.{ts,tsx}"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "@postsig/toolkit",
+                "message": "Importing the toolkit barrel pulls server-only code into client chunks. Import the subpath instead, e.g. '@postsig/toolkit/abilities' or '@postsig/toolkit/constants'."
+              },
+              {
+                "name": "@/constants/prompts",
+                "message": "Prompt constants are server-only. Reach them through a server component or server action instead of importing '@/constants/prompts' from client code."
+              }
+            ],
+            "patterns": [
+              {
+                "group": ["@/constants/prompts/*"],
+                "message": "Prompt constants are server-only. Reach them through a server component or server action instead of importing '@/constants/prompts/*' from client code."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

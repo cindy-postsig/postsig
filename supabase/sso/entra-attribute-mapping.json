@@ -1,0 +1,18 @@
+{
+  "keys": {
+    "given_name": {
+      "names": [
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+      ]
+    },
+    "family_name": {
+      "names": ["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"]
+    },
+    "name": {
+      "names": [
+        "http://schemas.microsoft.com/identity/claims/displayname",
+        "displayName"
+      ]
+    }
+  }
+}

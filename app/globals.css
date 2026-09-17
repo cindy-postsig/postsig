@@ -1,0 +1,453 @@
+@import './fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 13% 94%;
+    --foreground: 200 50% 3%;
+
+    --ps-blue: 236 62% 37%;
+    --gray: 227 16% 40%;
+    --navy: 236 72% 21%;
+    --font-sans: 'FK Grotesk', sans-serif;
+
+    --btn-background: 200 10% 91%;
+    --btn-background-hover: 200 10% 89%;
+
+    --card: 240 13% 97%;
+    --card-foreground: 224 71.4% 4.1%;
+
+    --popover: 240 13% 97%;
+    --popover-foreground: 224 71.4% 4.1%;
+
+    --primary: 240 62% 37%;
+    --primary-foreground: 210 20% 98%;
+
+    --primary-2: 224 62% 86%;
+    --primary-2-foreground: 210 20% 98%;
+
+    --secondary: 240 14.3% 88%;
+    --secondary-foreground: 220.9 39.3% 11%;
+
+    --muted: 240 13% 90%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --axis: 220 13% 78%;
+
+    /* Opaque equivalent of muted/50 over background — table banding. */
+    --band: 240 13% 92%;
+
+    --accent: 236 16% 94%;
+    --accent-foreground: 220.9 39.3% 11%;
+
+    --destructive: 333.33 71.43% 50.59%;
+    --destructive-foreground: 333.33 71.43% 95%;
+
+    --border: 220 5% 85%;
+    --input: 227, 16%, 80%;
+    --input-fill: hsl(0 0% 100% / 0.5);
+    --ring: 224 71.4% 4.1%;
+
+    --radius: 0.4rem;
+    --heading-letter-spacing: -0.025em;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 244 27% 12%;
+    --foreground: 244 18% 90%;
+    --gray: 227 16% 75%;
+
+    --ps-blue: 245 56% 65%;
+
+    --card: 244 27% 16%;
+    --card-foreground: 245 16% 92%;
+
+    --popover: 244 27% 6%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 20% 98%;
+    --primary-foreground: 210 20% 0%;
+
+    --primary-2: 224 40% 30%;
+    --primary-2-foreground: 210 20% 98%;
+
+    --secondary: 244 18% 24%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 244 20% 18%;
+    --muted-foreground: 244 7% 52%;
+    --axis: 244 10% 40%;
+
+    --band: 244 23% 15%;
+
+    --accent: 244 27% 14%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 333.33 71.43% 50.59%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 244 18% 20%;
+    --input: 244 18% 22%;
+    --input-fill: hsl(217 19% 27% / 0.1);
+    --ring: 216 12.2% 83.9%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /*
+   * Investor app theme — a fresh, neutral reset scoped to the (investor) route
+   * group via the .investor-theme wrapper. Same typography as core, but its own
+   * surface/primary palette so the investor surface reads as its own product.
+   * Override these freely; they cascade to every shadcn primitive rendered
+   * inside the wrapper without forking components.
+   */
+  .investor-theme {
+    --background: 0 0% 97%;
+    --foreground: 240 10% 3.9%;
+
+    --font-sans: 'FK Grotesk', sans-serif;
+
+    --ps-blue: 221 83% 53%;
+    --gray: 240 3.8% 46.1%;
+    --navy: 240 10% 3.9%;
+
+    --btn-background: 240 4.8% 95.9%;
+    --btn-background-hover: 240 5% 92%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 245.5 40.7% 21.2%;
+    --primary-foreground: 0 0% 98%;
+
+    --primary-2: 240 4.8% 90%;
+    --primary-2-foreground: 240 5.9% 10%;
+
+    --secondary: 240 4.8% 92%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 94%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --axis: 240 6% 78%;
+
+    --band: 240 4% 95.5%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --input-fill: hsl(0 0% 100%);
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+    --heading-letter-spacing: -0.025em;
+
+    --chart-1: 240 5.9% 10%;
+    --chart-2: 221 83% 53%;
+    --chart-3: 173 58% 39%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Sidebar wasn't themed for investor; map it to the investor palette. */
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--secondary);
+    --sidebar-accent-foreground: var(--foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+
+  .dark .investor-theme {
+    /* Dark mode mirrors the main app's navy palette. */
+    --background: 244 27% 12%;
+    --foreground: 244 18% 90%;
+
+    --ps-blue: 245 56% 65%;
+    --gray: 227 16% 75%;
+    --navy: 0 0% 98%;
+
+    --btn-background: 244 18% 24%;
+    --btn-background-hover: 244 18% 28%;
+
+    --card: 244 27% 16%;
+    --card-foreground: 245 16% 92%;
+
+    --popover: 244 27% 6%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 20% 98%;
+    --primary-foreground: 210 20% 0%;
+
+    --primary-2: 224 40% 30%;
+    --primary-2-foreground: 210 20% 98%;
+
+    --secondary: 244 18% 24%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 244 20% 18%;
+    --muted-foreground: 244 7% 52%;
+    --axis: 244 10% 40%;
+
+    --band: 244 23% 15%;
+
+    --accent: 244 27% 14%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 333.33 71.43% 50.59%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 244 18% 20%;
+    --input: 244 18% 22%;
+    --input-fill: hsl(244 27% 16%);
+    --ring: 216 12.2% 83.9%;
+
+    --chart-1: 0 0% 98%;
+    --chart-2: 217 91% 60%;
+    --chart-3: 160 60% 45%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--muted);
+    --sidebar-accent-foreground: var(--foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.grid-divider-container {
+  position: relative;
+}
+
+.prose {
+  --tw-prose-bullets: theme(colors.neutral.700);
+  --tw-prose-invert-bullets: theme(colors.neutral.300);
+}
+
+.prose :where(blockquote p:first-of-type)::before,
+.prose :where(blockquote p:last-of-type)::after {
+  content: none;
+}
+
+.prose hr {
+  border-width: 0;
+  border-top: 1px solid hsl(var(--border));
+  margin-block: 2rem !important;
+}
+
+.prose :where(li) > p:only-child {
+  margin-block: 0;
+}
+
+.animate-in {
+  animation: animateIn 0.3s ease 0.15s both;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-feature-settings:
+    'ss01',
+    'ss02',
+    'ss05',
+    'liga' off;
+  font-variation-settings: 'wght' 300;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.layout {
+  max-width: 100rem;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offset-nav {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.font-serif {
+  font-feature-settings: 'ss02', 'ss05';
+}
+
+.font-sans,
+.font-sans-neue {
+  font-feature-settings:
+    'ss01',
+    'ss02',
+    'ss05' off,
+    'liga' off;
+}
+
+/* Radix portals every menu/select/popover list into this body-level wrapper,
+   outside the component tree — so font classes on the trigger don't reach it.
+   Set the font once here and every popper-based surface inherits it. */
+[data-radix-popper-content-wrapper] {
+  font-family: 'FK Grotesk Neue', sans-serif;
+}
+
+.font-serif strong {
+  font-variation-settings: 'wght' 600;
+}
+
+.font-gtp {
+  font-variation-settings:
+    'wght' 500,
+    'wdth' 150,
+    'ital' 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  font-variation-settings: 'wght' 265;
+  letter-spacing: var(--heading-letter-spacing);
+  @apply leading-tight;
+}
+
+h2.font-serif {
+  font-variation-settings: 'wght' 320;
+}
+
+h2.font-serif,
+h3.font-serif,
+h4.font-serif {
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-variation-settings: 'wght' 280;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'FK Grotesk', sans-serif;
+  font-weight: 400;
+}
+
+.font-sans.font-medium:not(.tracking-wider),
+.font-sans .font-medium:not(.tracking-wider) {
+  @apply tracking-[0.01rem];
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 0.65rem;
+}
+
+hr {
+  border-width: 5px;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+label {
+  @apply font-sans;
+}
+
+/* Hover Transitions */
+
+input,
+tr,
+svg {
+  transition: 0.25s background ease;
+}
+
+/*.term-card {
+  background: linear-gradient(180deg, rgb(233 233 238), transparent);
+}*/
+
+.tsqd-open-btn-container {
+  bottom: 102px !important;
+}
+
+/* Override Tailwind typography (prose) styles on streamdown tables.
+   We can't add `not-prose` via a React override on `table` because
+   streamdown's default `table` component is what renders the chrome
+   (copy/CSV/download/fullscreen buttons) — overriding it kills the chrome.
+   CSS resets are the workaround. Also undoes the global `table {}` rule
+   in this file. */
+[data-streamdown='table'] {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Prose adds border-bottom on thead and tbody tr, which double-lines with
+   streamdown's `divide-y`. Reset both. */
+[data-streamdown='table-header'],
+[data-streamdown='table-body'] [data-streamdown='table-row'] {
+  border-bottom: 0;
+}

@@ -1,0 +1,135 @@
+:root {
+  --fc-today-bg-color: transparent;
+  --fc-page-bg-color: transparent;
+  --fc-bg-event-opacity: 1;
+  --fc-button-bg-color: transparent;
+  --fc-button-active-bg-color: hsla(var(--gray), 0.1);
+  --fc-button-hover-bg-color: hsla(var(--gray), 0.065);
+  --fc-button-border-color: hsl(var(--border));
+  --fc-button-hover-border-color: hsl(var(--border));
+  --fc-button-active-border-color: hsl(var(--border));
+  --fc-button-text-color: rgba(0, 0, 0, 0.75);
+  --fc-border-color: transparent;
+  --fc-daygrid-event-dot-width: 5px;
+}
+
+.fc-theme-standard {
+  font-family: 'Px Grotesk', monospace;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  gap: 0.75em;
+}
+
+.fc .fc-toolbar-title {
+  font-family: 'Arizona Mix', serif;
+  letter-spacing: var(--heading-letter-spacing);
+  font-size: 2.5rem;
+  font-variation-settings: 'wght' 280;
+}
+
+.fc .fc-toolbar-chunk {
+  display: flex;
+}
+
+.fc .fc-toolbar-chunk > button:disabled {
+  background-color: hsla(var(--gray), 0.15);
+  cursor: not-allowed;
+}
+
+.fc .fc-button-primary:disabled {
+  color: hsla(var(--gray), 0.9);
+}
+
+.fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:first-of-type {
+  width: 100%;
+}
+
+.fc .fc-button-group > .fc-button.fc-button-active {
+  color: black;
+}
+
+.fc .fc-today-button {
+  text-transform: capitalize;
+}
+
+.fc .fc-multimonth-title {
+  text-align: left;
+}
+
+.fc .fc-multimonth-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.fc .fc-cell-shaded,
+.fc .fc-day-disabled {
+  background: transparent;
+}
+
+.fc .fc-daygrid-day-frame {
+  border-top: 1px solid hsla(var(--gray), 0.25);
+  background: rgba(0, 0, 0, 0);
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: var(--fc-border-color) !important;
+  border: 8px solid;
+  font-size: 0.8rem;
+}
+
+.fc .fc-view .fc-daygrid-day-bg .event-container {
+  padding-top: 1.25rem;
+}
+
+.fc .fc-view.fc-dayGridMonth-view .fc-daygrid-day-bg .event-container {
+  padding-top: 1.5rem;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+  height: 4px;
+}
+
+.fc .fc-daygrid-day-number {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.fc .fc-fiscalQuarterYear-view .fc-day-other .fc-daygrid-day-frame * {
+  visibility: hidden;
+}
+
+.fc .fc-day.has-event {
+}
+
+.fc .has-event .fc-daygrid-day-frame {
+}
+
+.fc .has-event .fc-daygrid-day-number {
+  opacity: 1;
+}
+
+.fc .fc-day-today .fc-daygrid-day-frame {
+  background: hsla(var(--ps-blue), 0.12);
+}
+
+.fc .fc-day:hover .fc-daygrid-day-frame {
+  background: hsla(var(--gray), 0.1);
+}
+
+.fc .fc-day.fc-day-other:hover,
+.fc .fc-col-header-cell:hover {
+  background: transparent;
+}
+
+.fc .fc-daygrid-day-bg .fc-bg-event {
+  z-index: 99;
+  background-color: transparent !important;
+}
+
+.fc ::after,
+.fc ::before {
+  font-weight: bold;
+}

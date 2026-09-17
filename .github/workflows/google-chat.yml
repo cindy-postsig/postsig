@@ -1,0 +1,39 @@
+name: Send Google Chat Message
+
+on:
+  workflow_call:
+    inputs:
+      message:
+        description: Message text to send to Google Chat
+        required: true
+        type: string
+    secrets:
+      webhook_url:
+        description: 'Google Chat incoming webhook URL. Falls back to the GOOGLE_CHAT_WEBHOOK_URL org/repo secret when omitted (requires the caller to pass `secrets: inherit`).'
+        required: false
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Message text to send to Google Chat
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send to Google Chat
+        env:
+          WEBHOOK_URL: ${{ secrets.webhook_url || secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+          MESSAGE: ${{ inputs.message }}
+        run: |
+          set -euo pipefail
+          if [ -z "${WEBHOOK_URL:-}" ]; then
+            echo "No webhook URL provided (pass secrets: inherit or a webhook_url secret)." >&2
+            exit 1
+          fi
+          jq -n --arg text "$MESSAGE" '{text: $text}' \
+            | curl -sS -f -X POST -H 'Content-Type: application/json' -d @- "$WEBHOOK_URL"

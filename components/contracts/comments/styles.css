@@ -1,0 +1,28 @@
+.tippy-box[data-theme~='light'] .tippy-content {
+  padding: 0;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.attachment-container {
+  @apply rounded border bg-muted;
+}
+
+.attachment-container .attachment-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 0.25rem;
+}
+
+.attachment-container .attachment-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  text-decoration: none;
+}

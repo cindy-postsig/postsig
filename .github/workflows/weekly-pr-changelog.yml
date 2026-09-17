@@ -1,0 +1,52 @@
+name: Weekly PR Changelog to Google Chat (from Copilot AW issue)
+
+on:
+  schedule:
+    - cron: '0 9 * * 4' # Thursday 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      message: ${{ steps.issue.outputs.message }}
+    env:
+      REPO: postsig/postsig-nextjs
+
+    steps:
+      - name: Find latest weekly-changelog issue
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          ISSUE_JSON=$(gh issue list -R "$REPO" \
+            --search 'in:title weekly-changelog sort:created-desc' \
+            --state all \
+            --limit 1 \
+            --json number,title,body,url)
+
+          BODY=$(jq -r '.[0].body // empty' <<<"$ISSUE_JSON")
+
+          if [ -z "$BODY" ]; then
+            echo "No weekly-changelog issue found." >&2
+            exit 1
+          fi
+
+          {
+            echo "message<<EOF"
+            echo "$BODY"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+  notify:
+    needs: build
+    uses: ./.github/workflows/google-chat.yml
+    with:
+      message: ${{ needs.build.outputs.message }}
+    secrets: inherit

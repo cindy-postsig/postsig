@@ -1,0 +1,1 @@
+DROP EVENT TRIGGER IF EXISTS enable_rls_on_create_table;

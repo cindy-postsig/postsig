@@ -1,0 +1,1283 @@
+{
+  "committed": {
+    "vendors": [
+      {
+        "vendorId": 1,
+        "vendorName": "Amended Corp",
+        "contractCount": 2,
+        "currency": "USD",
+        "currentACV": 25000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 10000,
+            "status": "historical"
+          },
+          {
+            "label": "2025",
+            "fees": 19958.9,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 15000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 15000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 500,
+            "productName": "Data Feed",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 10000
+              },
+              {
+                "label": "2025",
+                "fees": 19958.9
+              },
+              {
+                "label": "2026",
+                "fees": 15000
+              },
+              {
+                "label": "2027",
+                "fees": 15000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 11,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": null,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 10000
+                  },
+                  {
+                    "label": "2025",
+                    "fees": 4958.9
+                  }
+                ]
+              },
+              {
+                "contractId": 12,
+                "contractType": "Amendment",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 15000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 15000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 15000
+                  }
+                ],
+                "amendsContractId": 11,
+                "amendsContractType": "Order Form"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 2,
+        "vendorName": "MultiSpan GmbH",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 12000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 12000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 12000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 12000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 600,
+            "productName": "Terminal",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 12000
+              },
+              {
+                "label": "2026",
+                "fees": 12000
+              },
+              {
+                "label": "2027",
+                "fees": 12000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 21,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 12000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 3,
+        "vendorName": "MultiYear Inc",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 12000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 10000,
+            "status": "historical"
+          },
+          {
+            "label": "2025",
+            "fees": 11000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 12000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 12000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 700,
+            "productName": "Index A",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 10000
+              },
+              {
+                "label": "2025",
+                "fees": 11000
+              },
+              {
+                "label": "2026",
+                "fees": 12000
+              },
+              {
+                "label": "2027",
+                "fees": 12000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 31,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 10000
+                  },
+                  {
+                    "label": "2025",
+                    "fees": 11000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 12000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 6,
+        "vendorName": "Stub PLC",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 9000,
+        "renewalPercent": null,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 9000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 9000,
+            "status": "current"
+          }
+        ],
+        "products": [
+          {
+            "productId": 950,
+            "productName": "Research",
+            "renewalPercent": -100,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 9000
+              },
+              {
+                "label": "2026",
+                "fees": 9000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 61,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": -100,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 9000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 9000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 4,
+        "vendorName": "Archived Ltd",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 8000,
+        "renewalPercent": null,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 8000,
+            "status": "historical"
+          }
+        ],
+        "products": [
+          {
+            "productId": 800,
+            "productName": "Legacy Tool",
+            "renewalPercent": null,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 8000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 41,
+                "contractType": "Order Form",
+                "isArchived": true,
+                "renewalPercent": null,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 8000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 5,
+        "vendorName": "Increase Co",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 5000,
+        "renewalPercent": 10,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 5000,
+            "status": "current"
+          },
+          {
+            "label": "2026",
+            "fees": 5500,
+            "status": "projected"
+          },
+          {
+            "label": "2027",
+            "fees": 6050,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 900,
+            "productName": "Ratings",
+            "renewalPercent": 10,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 5000
+              },
+              {
+                "label": "2026",
+                "fees": 5500
+              },
+              {
+                "label": "2027",
+                "fees": 6050
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 51,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 10,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 5000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 5500
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 6050
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "periodLabels": ["2024", "2025", "2026", "2027"]
+  },
+  "amortized": {
+    "vendors": [
+      {
+        "vendorId": 1,
+        "vendorName": "Amended Corp",
+        "contractCount": 2,
+        "currency": "USD",
+        "currentACV": 25000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 9999.96,
+            "status": "historical"
+          },
+          {
+            "label": "2025",
+            "fees": 12458.880000000001,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 15000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 15000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 500,
+            "productName": "Data Feed",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 9999.96
+              },
+              {
+                "label": "2025",
+                "fees": 12458.880000000001
+              },
+              {
+                "label": "2026",
+                "fees": 15000
+              },
+              {
+                "label": "2027",
+                "fees": 15000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 11,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": null,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 9999.96
+                  },
+                  {
+                    "label": "2025",
+                    "fees": 4958.88
+                  }
+                ]
+              },
+              {
+                "contractId": 12,
+                "contractType": "Amendment",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 7500
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 15000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 15000
+                  }
+                ],
+                "amendsContractId": 11,
+                "amendsContractType": "Order Form"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 2,
+        "vendorName": "MultiSpan GmbH",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 12000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 12000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 12000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 12000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 600,
+            "productName": "Terminal",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 12000
+              },
+              {
+                "label": "2026",
+                "fees": 12000
+              },
+              {
+                "label": "2027",
+                "fees": 12000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 21,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 12000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 3,
+        "vendorName": "MultiYear Inc",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 12000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 9999.96,
+            "status": "historical"
+          },
+          {
+            "label": "2025",
+            "fees": 11000.04,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 12000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 12000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 700,
+            "productName": "Index A",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 9999.96
+              },
+              {
+                "label": "2025",
+                "fees": 11000.04
+              },
+              {
+                "label": "2026",
+                "fees": 12000
+              },
+              {
+                "label": "2027",
+                "fees": 12000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 31,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 9999.96
+                  },
+                  {
+                    "label": "2025",
+                    "fees": 11000.04
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 12000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 6,
+        "vendorName": "Stub PLC",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 9000,
+        "renewalPercent": null,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 6000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 6000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 6000,
+            "status": "historical"
+          }
+        ],
+        "products": [
+          {
+            "productId": 950,
+            "productName": "Research",
+            "renewalPercent": -100,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 6000
+              },
+              {
+                "label": "2026",
+                "fees": 6000
+              },
+              {
+                "label": "2027",
+                "fees": 6000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 61,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": -100,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 6000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 6000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 6000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 4,
+        "vendorName": "Archived Ltd",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 8000,
+        "renewalPercent": null,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 6666.7,
+            "status": "historical"
+          },
+          {
+            "label": "2025",
+            "fees": 1333.34,
+            "status": "historical"
+          }
+        ],
+        "products": [
+          {
+            "productId": 800,
+            "productName": "Legacy Tool",
+            "renewalPercent": null,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 6666.7
+              },
+              {
+                "label": "2025",
+                "fees": 1333.34
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 41,
+                "contractType": "Order Form",
+                "isArchived": true,
+                "renewalPercent": null,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 6666.7
+                  },
+                  {
+                    "label": "2025",
+                    "fees": 1333.34
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 5,
+        "vendorName": "Increase Co",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 5000,
+        "renewalPercent": 10,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 2083.35,
+            "status": "current"
+          },
+          {
+            "label": "2026",
+            "fees": 5208.34,
+            "status": "projected"
+          },
+          {
+            "label": "2027",
+            "fees": 5729.16,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 900,
+            "productName": "Ratings",
+            "renewalPercent": 10,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 2083.35
+              },
+              {
+                "label": "2026",
+                "fees": 5208.34
+              },
+              {
+                "label": "2027",
+                "fees": 5729.16
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 51,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 10,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 2083.35
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 5208.34
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 5729.16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "periodLabels": ["2024", "2025", "2026", "2027"]
+  },
+  "actual": {
+    "vendors": [
+      {
+        "vendorId": 1,
+        "vendorName": "Amended Corp",
+        "contractCount": 2,
+        "currency": "USD",
+        "currentACV": 25000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 10000,
+            "status": "historical"
+          },
+          {
+            "label": "2025",
+            "fees": 19958.9,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 15000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 15000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 500,
+            "productName": "Data Feed",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 10000
+              },
+              {
+                "label": "2025",
+                "fees": 19958.9
+              },
+              {
+                "label": "2026",
+                "fees": 15000
+              },
+              {
+                "label": "2027",
+                "fees": 15000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 11,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": null,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 10000
+                  },
+                  {
+                    "label": "2025",
+                    "fees": 4958.9
+                  }
+                ]
+              },
+              {
+                "contractId": 12,
+                "contractType": "Amendment",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 15000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 15000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 15000
+                  }
+                ],
+                "amendsContractId": 11,
+                "amendsContractType": "Order Form"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 2,
+        "vendorName": "MultiSpan GmbH",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 12000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 12000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 12000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 12000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 600,
+            "productName": "Terminal",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 12000
+              },
+              {
+                "label": "2026",
+                "fees": 12000
+              },
+              {
+                "label": "2027",
+                "fees": 12000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 21,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 12000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 3,
+        "vendorName": "MultiYear Inc",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 12000,
+        "renewalPercent": 0,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 10000,
+            "status": "historical"
+          },
+          {
+            "label": "2025",
+            "fees": 11000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 12000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 12000,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 700,
+            "productName": "Index A",
+            "renewalPercent": 0,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 10000
+              },
+              {
+                "label": "2025",
+                "fees": 11000
+              },
+              {
+                "label": "2026",
+                "fees": 12000
+              },
+              {
+                "label": "2027",
+                "fees": 12000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 31,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 0,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 10000
+                  },
+                  {
+                    "label": "2025",
+                    "fees": 11000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 12000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 12000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 6,
+        "vendorName": "Stub PLC",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 9000,
+        "renewalPercent": null,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 6000,
+            "status": "historical"
+          },
+          {
+            "label": "2026",
+            "fees": 9000,
+            "status": "current"
+          },
+          {
+            "label": "2027",
+            "fees": 3000,
+            "status": "historical"
+          }
+        ],
+        "products": [
+          {
+            "productId": 950,
+            "productName": "Research",
+            "renewalPercent": -100,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 6000
+              },
+              {
+                "label": "2026",
+                "fees": 9000
+              },
+              {
+                "label": "2027",
+                "fees": 3000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 61,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": -100,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 6000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 9000
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 3000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 4,
+        "vendorName": "Archived Ltd",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 8000,
+        "renewalPercent": null,
+        "periods": [
+          {
+            "label": "2024",
+            "fees": 8000,
+            "status": "historical"
+          }
+        ],
+        "products": [
+          {
+            "productId": 800,
+            "productName": "Legacy Tool",
+            "renewalPercent": null,
+            "periods": [
+              {
+                "label": "2024",
+                "fees": 8000
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 41,
+                "contractType": "Order Form",
+                "isArchived": true,
+                "renewalPercent": null,
+                "periods": [
+                  {
+                    "label": "2024",
+                    "fees": 8000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "vendorId": 5,
+        "vendorName": "Increase Co",
+        "contractCount": 1,
+        "currency": "USD",
+        "currentACV": 5000,
+        "renewalPercent": 10,
+        "periods": [
+          {
+            "label": "2025",
+            "fees": 5000,
+            "status": "current"
+          },
+          {
+            "label": "2026",
+            "fees": 5500,
+            "status": "projected"
+          },
+          {
+            "label": "2027",
+            "fees": 6050,
+            "status": "projected"
+          }
+        ],
+        "products": [
+          {
+            "productId": 900,
+            "productName": "Ratings",
+            "renewalPercent": 10,
+            "periods": [
+              {
+                "label": "2025",
+                "fees": 5000
+              },
+              {
+                "label": "2026",
+                "fees": 5500
+              },
+              {
+                "label": "2027",
+                "fees": 6050
+              }
+            ],
+            "contracts": [
+              {
+                "contractId": 51,
+                "contractType": "Order Form",
+                "isArchived": false,
+                "renewalPercent": 10,
+                "periods": [
+                  {
+                    "label": "2025",
+                    "fees": 5000
+                  },
+                  {
+                    "label": "2026",
+                    "fees": 5500
+                  },
+                  {
+                    "label": "2027",
+                    "fees": 6050
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "periodLabels": ["2024", "2025", "2026", "2027"]
+  }
+}

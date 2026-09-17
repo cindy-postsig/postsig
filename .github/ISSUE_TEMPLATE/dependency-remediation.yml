@@ -1,0 +1,46 @@
+name: 'Dependency remediation request'
+description: 'Request a focused dependency remediation PR via Copilot'
+title: 'Remediate dependency alert: <package>'
+labels:
+  - dependencies
+  - security
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this issue to request a focused remediation PR for a specific dependency alert.
+
+        **Note:** After creating the issue, edit the title to replace `<package>` with the actual package name.
+  - type: input
+    id: package_name
+    attributes:
+      label: Package name
+      placeholder: e.g. minimist
+    validations:
+      required: true
+  - type: input
+    id: advisory
+    attributes:
+      label: Advisory ID(s)
+      placeholder: e.g. GHSA-xxxx-xxxx-xxxx, CVE-2026-12345
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - critical
+        - high
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Copilot remediation task
+      value: |
+        Open a focused PR against `development` that:
+        1) upgrades only this vulnerable dependency to the minimal safe version,
+        2) updates lockfile as needed,
+        3) runs tests/lint/build,
+        4) includes risk + rollback notes in the PR description.

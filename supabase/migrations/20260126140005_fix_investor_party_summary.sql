@@ -1,0 +1,1 @@
+ALTER VIEW public.investor_party_summary SET (security_invoker = true);

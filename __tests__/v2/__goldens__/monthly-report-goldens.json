@@ -1,0 +1,958 @@
+{
+  "sponsor": {
+    "amortized": [
+      {
+        "id": 3,
+        "name": "Unassigned",
+        "vendors": 4,
+        "currentMonth": 6333.33,
+        "nextMonth": 6000,
+        "change": -333.3299999999999,
+        "currency": "USD",
+        "displayCurrentMonth": 6333.33,
+        "displayNextMonth": 6000,
+        "displayChange": -333.3299999999999,
+        "subRows": [
+          {
+            "id": "3-1",
+            "contractId": 2,
+            "name": "ScalarGroup Inc",
+            "vendor": "ScalarGroup Inc",
+            "product": "ScalarGroup Inc Product",
+            "currentMonth": 2000,
+            "nextMonth": 2000,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 2000,
+            "displayNextMonth": 2000,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Unassigned"],
+            "sponsorCount": 1,
+            "billingFrequency": "Annually",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 200,
+                "year": 1,
+                "vendor_products": {
+                  "id": 200,
+                  "name": "ScalarGroup Inc Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "3-2",
+            "contractId": 3,
+            "name": "AclGroup Ltd",
+            "vendor": "AclGroup Ltd",
+            "product": "AclGroup Ltd Product",
+            "currentMonth": 3000,
+            "nextMonth": 3000,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 3000,
+            "displayNextMonth": 3000,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Unassigned"],
+            "sponsorCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 300,
+                "year": 1,
+                "vendor_products": {
+                  "id": 300,
+                  "name": "AclGroup Ltd Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "3-3",
+            "contractId": 5,
+            "name": "RenewalIncrease Co",
+            "vendor": "RenewalIncrease Co",
+            "product": "RenewalIncrease Co Product",
+            "currentMonth": 833.33,
+            "nextMonth": 1000,
+            "change": 166.66999999999996,
+            "currency": "USD",
+            "displayCurrentMonth": 833.33,
+            "displayNextMonth": 1000,
+            "displayChange": 166.66999999999996,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Unassigned"],
+            "sponsorCount": 1,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 500,
+                "year": 1,
+                "vendor_products": {
+                  "id": 500,
+                  "name": "RenewalIncrease Co Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "3-4",
+            "contractId": 6,
+            "name": "WillNotRenew GmbH",
+            "vendor": "WillNotRenew GmbH",
+            "product": "WillNotRenew GmbH Product",
+            "currentMonth": 500,
+            "nextMonth": 0,
+            "change": -500,
+            "currency": "USD",
+            "displayCurrentMonth": 500,
+            "displayNextMonth": 0,
+            "displayChange": -500,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Unassigned"],
+            "sponsorCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 600,
+                "year": 1,
+                "vendor_products": {
+                  "id": 600,
+                  "name": "WillNotRenew GmbH Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Carol",
+        "vendors": 1,
+        "currentMonth": 4166.67,
+        "nextMonth": 4166.67,
+        "change": 0,
+        "currency": "USD",
+        "displayCurrentMonth": 4166.67,
+        "displayNextMonth": 4166.67,
+        "displayChange": 0,
+        "subRows": [
+          {
+            "id": "4-1",
+            "contractId": 4,
+            "name": "NovStart LLC",
+            "vendor": "NovStart LLC",
+            "product": "NovStart LLC Product",
+            "currentMonth": 4166.67,
+            "nextMonth": 4166.67,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 4166.67,
+            "displayNextMonth": 4166.67,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Carol"],
+            "sponsorCount": 1,
+            "billingFrequency": "Annually",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 400,
+                "year": 1,
+                "vendor_products": {
+                  "id": 400,
+                  "name": "NovStart LLC Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Alice",
+        "vendors": 1,
+        "currentMonth": 500,
+        "nextMonth": 500,
+        "change": 0,
+        "currency": "USD",
+        "displayCurrentMonth": 500,
+        "displayNextMonth": 500,
+        "displayChange": 0,
+        "subRows": [
+          {
+            "id": "1-1",
+            "contractId": 1,
+            "name": "MultiSponsor Corp",
+            "vendor": "MultiSponsor Corp",
+            "product": "MultiSponsor Corp Product",
+            "currentMonth": 500,
+            "nextMonth": 500,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 500,
+            "displayNextMonth": 500,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": true,
+            "businessSponsors": ["Alice", "Bob"],
+            "sponsorCount": 2,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 100,
+                "year": 1,
+                "vendor_products": {
+                  "id": 100,
+                  "name": "MultiSponsor Corp Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Bob",
+        "vendors": 1,
+        "currentMonth": 500,
+        "nextMonth": 500,
+        "change": 0,
+        "currency": "USD",
+        "displayCurrentMonth": 500,
+        "displayNextMonth": 500,
+        "displayChange": 0,
+        "subRows": [
+          {
+            "id": "2-1",
+            "contractId": 1,
+            "name": "MultiSponsor Corp",
+            "vendor": "MultiSponsor Corp",
+            "product": "MultiSponsor Corp Product",
+            "currentMonth": 500,
+            "nextMonth": 500,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 500,
+            "displayNextMonth": 500,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": true,
+            "businessSponsors": ["Alice", "Bob"],
+            "sponsorCount": 2,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 100,
+                "year": 1,
+                "vendor_products": {
+                  "id": 100,
+                  "name": "MultiSponsor Corp Product"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "actual": [
+      {
+        "id": 3,
+        "name": "Unassigned",
+        "vendors": 3,
+        "currentMonth": 3500,
+        "nextMonth": 6000,
+        "change": 2500,
+        "currency": "USD",
+        "displayCurrentMonth": 3500,
+        "displayNextMonth": 6000,
+        "displayChange": 2500,
+        "subRows": [
+          {
+            "id": "3-1",
+            "contractId": 3,
+            "name": "AclGroup Ltd",
+            "vendor": "AclGroup Ltd",
+            "product": "AclGroup Ltd Product",
+            "currentMonth": 3000,
+            "nextMonth": 3000,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 3000,
+            "displayNextMonth": 3000,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Unassigned"],
+            "sponsorCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 300,
+                "year": 1,
+                "vendor_products": {
+                  "id": 300,
+                  "name": "AclGroup Ltd Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "3-2",
+            "contractId": 5,
+            "name": "RenewalIncrease Co",
+            "vendor": "RenewalIncrease Co",
+            "product": "RenewalIncrease Co Product",
+            "currentMonth": 0,
+            "nextMonth": 3000,
+            "change": 3000,
+            "currency": "USD",
+            "displayCurrentMonth": 0,
+            "displayNextMonth": 3000,
+            "displayChange": 3000,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Unassigned"],
+            "sponsorCount": 1,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 500,
+                "year": 1,
+                "vendor_products": {
+                  "id": 500,
+                  "name": "RenewalIncrease Co Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "3-3",
+            "contractId": 6,
+            "name": "WillNotRenew GmbH",
+            "vendor": "WillNotRenew GmbH",
+            "product": "WillNotRenew GmbH Product",
+            "currentMonth": 500,
+            "nextMonth": 0,
+            "change": -500,
+            "currency": "USD",
+            "displayCurrentMonth": 500,
+            "displayNextMonth": 0,
+            "displayChange": -500,
+            "tags": [],
+            "isSplit": false,
+            "businessSponsors": ["Unassigned"],
+            "sponsorCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 600,
+                "year": 1,
+                "vendor_products": {
+                  "id": 600,
+                  "name": "WillNotRenew GmbH Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Alice",
+        "vendors": 1,
+        "currentMonth": 1500,
+        "nextMonth": 0,
+        "change": -1500,
+        "currency": "USD",
+        "displayCurrentMonth": 1500,
+        "displayNextMonth": 0,
+        "displayChange": -1500,
+        "subRows": [
+          {
+            "id": "1-1",
+            "contractId": 1,
+            "name": "MultiSponsor Corp",
+            "vendor": "MultiSponsor Corp",
+            "product": "MultiSponsor Corp Product",
+            "currentMonth": 1500,
+            "nextMonth": 0,
+            "change": -1500,
+            "currency": "USD",
+            "displayCurrentMonth": 1500,
+            "displayNextMonth": 0,
+            "displayChange": -1500,
+            "tags": [],
+            "isSplit": true,
+            "businessSponsors": ["Alice", "Bob"],
+            "sponsorCount": 2,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 100,
+                "year": 1,
+                "vendor_products": {
+                  "id": 100,
+                  "name": "MultiSponsor Corp Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Bob",
+        "vendors": 1,
+        "currentMonth": 1500,
+        "nextMonth": 0,
+        "change": -1500,
+        "currency": "USD",
+        "displayCurrentMonth": 1500,
+        "displayNextMonth": 0,
+        "displayChange": -1500,
+        "subRows": [
+          {
+            "id": "2-1",
+            "contractId": 1,
+            "name": "MultiSponsor Corp",
+            "vendor": "MultiSponsor Corp",
+            "product": "MultiSponsor Corp Product",
+            "currentMonth": 1500,
+            "nextMonth": 0,
+            "change": -1500,
+            "currency": "USD",
+            "displayCurrentMonth": 1500,
+            "displayNextMonth": 0,
+            "displayChange": -1500,
+            "tags": [],
+            "isSplit": true,
+            "businessSponsors": ["Alice", "Bob"],
+            "sponsorCount": 2,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 100,
+                "year": 1,
+                "vendor_products": {
+                  "id": 100,
+                  "name": "MultiSponsor Corp Product"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "group": {
+    "amortized": [
+      {
+        "id": 1,
+        "name": "Unassigned",
+        "vendors": 4,
+        "currentMonth": 6500,
+        "nextMonth": 6166.67,
+        "change": -333.3299999999999,
+        "currency": "USD",
+        "displayCurrentMonth": 6500,
+        "displayNextMonth": 6166.67,
+        "displayChange": -333.3299999999999,
+        "subRows": [
+          {
+            "id": "1-1",
+            "contractId": 1,
+            "name": "MultiSponsor Corp",
+            "vendor": "MultiSponsor Corp",
+            "product": "MultiSponsor Corp Product",
+            "currentMonth": 1000,
+            "nextMonth": 1000,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 1000,
+            "displayNextMonth": 1000,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Unassigned"],
+            "groupCount": 1,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 100,
+                "year": 1,
+                "vendor_products": {
+                  "id": 100,
+                  "name": "MultiSponsor Corp Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "1-2",
+            "contractId": 4,
+            "name": "NovStart LLC",
+            "vendor": "NovStart LLC",
+            "product": "NovStart LLC Product",
+            "currentMonth": 4166.67,
+            "nextMonth": 4166.67,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 4166.67,
+            "displayNextMonth": 4166.67,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Unassigned"],
+            "groupCount": 1,
+            "billingFrequency": "Annually",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 400,
+                "year": 1,
+                "vendor_products": {
+                  "id": 400,
+                  "name": "NovStart LLC Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "1-3",
+            "contractId": 5,
+            "name": "RenewalIncrease Co",
+            "vendor": "RenewalIncrease Co",
+            "product": "RenewalIncrease Co Product",
+            "currentMonth": 833.33,
+            "nextMonth": 1000,
+            "change": 166.66999999999996,
+            "currency": "USD",
+            "displayCurrentMonth": 833.33,
+            "displayNextMonth": 1000,
+            "displayChange": 166.66999999999996,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Unassigned"],
+            "groupCount": 1,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 500,
+                "year": 1,
+                "vendor_products": {
+                  "id": 500,
+                  "name": "RenewalIncrease Co Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "1-4",
+            "contractId": 6,
+            "name": "WillNotRenew GmbH",
+            "vendor": "WillNotRenew GmbH",
+            "product": "WillNotRenew GmbH Product",
+            "currentMonth": 500,
+            "nextMonth": 0,
+            "change": -500,
+            "currency": "USD",
+            "displayCurrentMonth": 500,
+            "displayNextMonth": 0,
+            "displayChange": -500,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Unassigned"],
+            "groupCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 600,
+                "year": 1,
+                "vendor_products": {
+                  "id": 600,
+                  "name": "WillNotRenew GmbH Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Trading",
+        "vendors": 1,
+        "currentMonth": 3000,
+        "nextMonth": 3000,
+        "change": 0,
+        "currency": "USD",
+        "displayCurrentMonth": 3000,
+        "displayNextMonth": 3000,
+        "displayChange": 0,
+        "subRows": [
+          {
+            "id": "3-1",
+            "contractId": 3,
+            "name": "AclGroup Ltd",
+            "vendor": "AclGroup Ltd",
+            "product": "AclGroup Ltd Product",
+            "currentMonth": 3000,
+            "nextMonth": 3000,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 3000,
+            "displayNextMonth": 3000,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Trading"],
+            "groupCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 300,
+                "year": 1,
+                "vendor_products": {
+                  "id": 300,
+                  "name": "AclGroup Ltd Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Research",
+        "vendors": 1,
+        "currentMonth": 2000,
+        "nextMonth": 2000,
+        "change": 0,
+        "currency": "USD",
+        "displayCurrentMonth": 2000,
+        "displayNextMonth": 2000,
+        "displayChange": 0,
+        "subRows": [
+          {
+            "id": "2-1",
+            "contractId": 2,
+            "name": "ScalarGroup Inc",
+            "vendor": "ScalarGroup Inc",
+            "product": "ScalarGroup Inc Product",
+            "currentMonth": 2000,
+            "nextMonth": 2000,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 2000,
+            "displayNextMonth": 2000,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Research"],
+            "groupCount": 1,
+            "billingFrequency": "Annually",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 200,
+                "year": 1,
+                "vendor_products": {
+                  "id": 200,
+                  "name": "ScalarGroup Inc Product"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "actual": [
+      {
+        "id": 1,
+        "name": "Unassigned",
+        "vendors": 3,
+        "currentMonth": 3500,
+        "nextMonth": 3000,
+        "change": -500,
+        "currency": "USD",
+        "displayCurrentMonth": 3500,
+        "displayNextMonth": 3000,
+        "displayChange": -500,
+        "subRows": [
+          {
+            "id": "1-1",
+            "contractId": 1,
+            "name": "MultiSponsor Corp",
+            "vendor": "MultiSponsor Corp",
+            "product": "MultiSponsor Corp Product",
+            "currentMonth": 3000,
+            "nextMonth": 0,
+            "change": -3000,
+            "currency": "USD",
+            "displayCurrentMonth": 3000,
+            "displayNextMonth": 0,
+            "displayChange": -3000,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Unassigned"],
+            "groupCount": 1,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 100,
+                "year": 1,
+                "vendor_products": {
+                  "id": 100,
+                  "name": "MultiSponsor Corp Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "1-2",
+            "contractId": 5,
+            "name": "RenewalIncrease Co",
+            "vendor": "RenewalIncrease Co",
+            "product": "RenewalIncrease Co Product",
+            "currentMonth": 0,
+            "nextMonth": 3000,
+            "change": 3000,
+            "currency": "USD",
+            "displayCurrentMonth": 0,
+            "displayNextMonth": 3000,
+            "displayChange": 3000,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Unassigned"],
+            "groupCount": 1,
+            "billingFrequency": "Quarterly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 500,
+                "year": 1,
+                "vendor_products": {
+                  "id": 500,
+                  "name": "RenewalIncrease Co Product"
+                }
+              }
+            ]
+          },
+          {
+            "id": "1-3",
+            "contractId": 6,
+            "name": "WillNotRenew GmbH",
+            "vendor": "WillNotRenew GmbH",
+            "product": "WillNotRenew GmbH Product",
+            "currentMonth": 500,
+            "nextMonth": 0,
+            "change": -500,
+            "currency": "USD",
+            "displayCurrentMonth": 500,
+            "displayNextMonth": 0,
+            "displayChange": -500,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Unassigned"],
+            "groupCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 600,
+                "year": 1,
+                "vendor_products": {
+                  "id": 600,
+                  "name": "WillNotRenew GmbH Product"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Trading",
+        "vendors": 1,
+        "currentMonth": 3000,
+        "nextMonth": 3000,
+        "change": 0,
+        "currency": "USD",
+        "displayCurrentMonth": 3000,
+        "displayNextMonth": 3000,
+        "displayChange": 0,
+        "subRows": [
+          {
+            "id": "3-1",
+            "contractId": 3,
+            "name": "AclGroup Ltd",
+            "vendor": "AclGroup Ltd",
+            "product": "AclGroup Ltd Product",
+            "currentMonth": 3000,
+            "nextMonth": 3000,
+            "change": 0,
+            "currency": "USD",
+            "displayCurrentMonth": 3000,
+            "displayNextMonth": 3000,
+            "displayChange": 0,
+            "tags": [],
+            "isSplit": false,
+            "businessGroups": ["Trading"],
+            "groupCount": 1,
+            "billingFrequency": "Monthly",
+            "supersededProducts": [],
+            "currentYearProducts": [
+              {
+                "id": 300,
+                "year": 1,
+                "vendor_products": {
+                  "id": 300,
+                  "name": "AclGroup Ltd Product"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "topVendors": {
+    "amortized": [
+      {
+        "name": "NovStart LLC",
+        "spend": 4166.67
+      },
+      {
+        "name": "AclGroup Ltd",
+        "spend": 3000
+      },
+      {
+        "name": "ScalarGroup Inc",
+        "spend": 2000
+      },
+      {
+        "name": "MultiSponsor Corp",
+        "spend": 1000
+      },
+      {
+        "name": "RenewalIncrease Co",
+        "spend": 833.33
+      },
+      {
+        "name": "WillNotRenew GmbH",
+        "spend": 500
+      }
+    ],
+    "actual": [
+      {
+        "name": "MultiSponsor Corp",
+        "spend": 3000
+      },
+      {
+        "name": "AclGroup Ltd",
+        "spend": 3000
+      },
+      {
+        "name": "WillNotRenew GmbH",
+        "spend": 500
+      },
+      {
+        "name": "ScalarGroup Inc",
+        "spend": 0
+      },
+      {
+        "name": "NovStart LLC",
+        "spend": 0
+      },
+      {
+        "name": "RenewalIncrease Co",
+        "spend": 0
+      }
+    ]
+  },
+  "priceChanges": {
+    "amortized": [
+      {
+        "id": 2,
+        "contractId": 6,
+        "vendor": "WillNotRenew GmbH",
+        "product": "WillNotRenew GmbH Product",
+        "logo": "WG",
+        "previousPrice": 500,
+        "newPrice": 0,
+        "change": -500,
+        "reasonForChange": "Contract will not renew",
+        "tags": [],
+        "currency": "USD",
+        "changeBase": -500
+      },
+      {
+        "id": 1,
+        "contractId": 5,
+        "vendor": "RenewalIncrease Co",
+        "product": "RenewalIncrease Co Product",
+        "logo": "RC",
+        "previousPrice": 833.33,
+        "newPrice": 1000,
+        "change": 166.66999999999996,
+        "reasonForChange": "Price increase",
+        "tags": [],
+        "currency": "USD",
+        "changeBase": 166.66999999999996
+      }
+    ],
+    "actual": [
+      {
+        "id": 1,
+        "contractId": 1,
+        "vendor": "MultiSponsor Corp",
+        "product": "MultiSponsor Corp Product",
+        "logo": "MC",
+        "previousPrice": 3000,
+        "newPrice": 0,
+        "change": -3000,
+        "reasonForChange": "Price decrease",
+        "tags": [],
+        "currency": "USD",
+        "changeBase": -3000
+      },
+      {
+        "id": 2,
+        "contractId": 6,
+        "vendor": "WillNotRenew GmbH",
+        "product": "WillNotRenew GmbH Product",
+        "logo": "WG",
+        "previousPrice": 500,
+        "newPrice": 0,
+        "change": -500,
+        "reasonForChange": "Contract will not renew",
+        "tags": [],
+        "currency": "USD",
+        "changeBase": -500
+      }
+    ]
+  }
+}

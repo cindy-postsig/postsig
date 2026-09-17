@@ -1,0 +1,35 @@
+.react-pdf__Document {
+  text-align: center;
+}
+.pdf-page {
+  display: inline-block;
+}
+
+#detailsPane,
+#contractPane,
+#contractSidebar {
+  transition: 0.5s width ease;
+}
+
+#contractPane .pdf-page {
+  transition: 0.5s opacity ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.textLayer {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Aptos', 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: auto !important;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+/* Windows Chromium applies a platform selection foreground color that
+   overrides the text layer's transparent glyphs, painting the hidden
+   fallback-font text over the canvas; macOS keeps the element's own color.
+   An explicit ::selection color pins both platforms to the same behavior. */
+.textLayer span::selection {
+  color: transparent;
+  background: rgb(0 100 255 / 0.25);
+}

@@ -1,0 +1,17 @@
+name: Claude Code — Resolve Issue
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  resolve:
+    if: github.event.label.name == 'claude-task'
+    uses: postsig/.github/.github/workflows/claude-code-issue.yml@main
+    secrets: inherit

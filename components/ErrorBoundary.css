@@ -1,0 +1,158 @@
+.error-boundary {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.error-boundary--page {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.error-boundary--component {
+  margin: 1rem 0;
+}
+
+.error-boundary__content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-boundary__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.error-boundary__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #7f1d1d;
+}
+
+.error-boundary__message {
+  margin-bottom: 1.5rem;
+  color: #991b1b;
+  line-height: 1.6;
+}
+
+.error-boundary__details {
+  margin: 1.5rem 0;
+  text-align: left;
+  background-color: #fef8f8;
+  border: 1px solid #f1c2c2;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.error-boundary__details summary {
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #7f1d1d;
+}
+
+.error-boundary__error-text {
+  font-family:
+    ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, 'Liberation Mono',
+    Menlo, monospace;
+  font-size: 0.875rem;
+  color: #7f1d1d;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.error-boundary__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.error-boundary__retry-button,
+.error-boundary__reload-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.error-boundary__retry-button {
+  background-color: #dc2626;
+  color: white;
+}
+
+.error-boundary__retry-button:hover {
+  background-color: #b91c1c;
+}
+
+.error-boundary__retry-button:focus {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+.error-boundary__reload-button {
+  background-color: #fff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
+
+.error-boundary__reload-button:hover {
+  background-color: #fef2f2;
+}
+
+.error-boundary__reload-button:focus {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+.error-boundary__error-id {
+  font-size: 0.75rem;
+  color: #7f1d1d;
+  opacity: 0.7;
+  font-family:
+    ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, 'Liberation Mono',
+    Menlo, monospace;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .error-boundary {
+    padding: 1rem;
+  }
+
+  .error-boundary--page {
+    margin: 1rem;
+    min-height: 300px;
+  }
+
+  .error-boundary__title {
+    font-size: 1.25rem;
+  }
+
+  .error-boundary__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error-boundary__retry-button,
+  .error-boundary__reload-button {
+    width: 100%;
+    max-width: 200px;
+  }
+}

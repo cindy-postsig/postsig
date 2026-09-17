@@ -1,0 +1,46 @@
+name: Jira Sync — Staging
+
+on:
+  push:
+    branches:
+      - staging
+
+permissions: {}
+
+concurrency:
+  group: jira-sync-staging
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    permissions:
+      contents: read
+      pull-requests: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+
+      - name: Promote Verified:Dev → Deployed:Staging
+        env:
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+        run: |
+          if [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            echo "Initial staging push detected — skipping Jira promotion"
+            exit 0
+          fi
+          node scripts/jira-sync.js promote \
+            "Verified: Dev" \
+            "Deployed: Staging" \
+            "$BEFORE_SHA" \
+            "$AFTER_SHA"

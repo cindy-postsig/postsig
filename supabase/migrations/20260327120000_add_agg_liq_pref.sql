@@ -1,0 +1,1 @@
+ALTER TABLE "inv_security_terms" ADD COLUMN "aggregate_liq_pref" numeric;
